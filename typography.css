@@ -5,7 +5,6 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-@import '../fast-font/fast-font.css';
 body {
     font-size: 15px;
 }
