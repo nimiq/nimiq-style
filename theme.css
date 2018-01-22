@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #536DFE;
+    --primary-background: linear-gradient(#536DFE, #a553fe);
+    /* teal-a200 */
+    --success-color: #64FFDA;
+    /* red-a100 */
+    --error-color: #FF8A80;
+    --warning-color: red;
+    --secondary-text-color: rgba(0, 0, 0, 0.7);
+    --secondary-cta-color: rgba(255, 255, 255, 0.7);
+}

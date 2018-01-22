@@ -1,0 +1,97 @@
+@keyframes shake {
+    from {
+        transform: none
+    }
+
+    15% {
+        transform: translate3d(-21%,0,0) rotate(-5deg)
+    }
+
+    30% {
+        transform: translate3d(13%,0,0) rotate(3deg)
+    }
+
+    45% {
+        transform: translate3d(-8%,0,0) rotate(-3deg)
+    }
+
+    60% {
+        transform: translate3d(5%,0,0) rotate(2deg)
+    }
+
+    75% {
+        transform: translate3d(-3%,0,0) rotate(-1deg)
+    }
+
+    to {
+        transform: none
+    }
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+}
+
+@keyframes move-left {
+    from { transform: translateX(-100%); }
+}
+
+@keyframes move-right {
+    from { transform: translateX(100%); }
+}
+
+@keyframes shrink {
+    from { transform: scale(1.1); }
+}
+
+@keyframes move-grow-fade-left {
+    from {
+        transform: scale(0.8) translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes move-grow-fade-right {
+    from {
+        transform: scale(0.8) translateX(100%);
+        opacity: 0;
+    }
+}
+
+.shake {
+    animation-name: shake;
+}
+
+.fade-in, .fade-out {
+    animation-name: fade;
+}
+
+.move-left-in, .move-left-out {
+    animation-name: move-left;
+}
+
+.move-right-in, .move-right-out {
+    animation-name: move-right;
+}
+
+.shrink-in, .shrink-out {
+    animation-name: shrink;
+}
+
+.move-grow-fade-left-in, .move-grow-fade-left-out {
+    animation-name: move-grow-fade-left;
+}
+
+.move-grow-fade-right-in, .move-grow-fade-right-out {
+    animation-name: move-grow-fade-right;
+}
+
+.fade-out, .move-left-out, .move-right-out, .shrink-out,
+.move-grow-fade-left-out, .move-grow-fade-right-out {
+    animation-direction: reverse;
+}
+
+.shake, .fade-in, .fade-out, .move-left-in, .move-left-out, .shrink-in, .shrink-out,
+.move-grow-fade-left-in, .move-grow-fade-left-out, .move-grow-fade-right-in, .move-grow-fade-right-out {
+    animation-duration: 0.5s;
+}
