@@ -44,17 +44,20 @@
     from { transform: scale(1.1); }
 }
 
-@keyframes move-grow-fade-left {
+@keyframes from-left {
     from {
         transform: scale(0.8) translateX(-100%);
         opacity: 0;
     }
 }
 
-@keyframes move-grow-fade-right {
+@keyframes from-right {
     from {
         transform: scale(0.8) translateX(100%);
         opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
 
@@ -78,20 +81,20 @@
     animation-name: shrink;
 }
 
-.move-grow-fade-left-in, .move-grow-fade-left-out {
-    animation-name: move-grow-fade-left;
+.from-left-in, .from-left-out {
+    animation-name: from-left;
 }
 
-.move-grow-fade-right-in, .move-grow-fade-right-out {
-    animation-name: move-grow-fade-right;
+.from-right-in, .from-right-out {
+    animation-name: from-right;
 }
 
 .fade-out, .move-left-out, .move-right-out, .shrink-out,
-.move-grow-fade-left-out, .move-grow-fade-right-out {
+.from-left-out, .from-right-out {
     animation-direction: reverse;
 }
 
 .shake, .fade-in, .fade-out, .move-left-in, .move-left-out, .shrink-in, .shrink-out,
-.move-grow-fade-left-in, .move-grow-fade-left-out, .move-grow-fade-right-in, .move-grow-fade-right-out {
+.from-left-in, .from-left-out, .from-right-in, .from-right-out {
     animation-duration: 0.5s;
 }
