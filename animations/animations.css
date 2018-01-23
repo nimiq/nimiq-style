@@ -46,14 +46,17 @@
 
 @keyframes from-left {
     from {
-        transform: scale(0.8) translateX(-100%);
+        transform: scale(0.8) translateX(-50%);
         opacity: 0;
     }
 }
 
 @keyframes from-right {
     from {
-        transform: scale(0.8) translateX(100%);
+        transform: scale(0.8) translateX(50%);
+        opacity: 0;
+    }
+    25%{
         opacity: 0;
     }
     to{

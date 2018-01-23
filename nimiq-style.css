@@ -1,6 +1,6 @@
-@import 'animations.css';
-@import 'typography.css';
-@import 'icons.css';
-@import 'inputs.css';
-@import 'layout.css';
-@import 'theme.css';
+@import 'animations/animations.css';
+@import 'typography/typography.css';
+@import 'icons/icons.css';
+@import 'inputs/inputs.css';
+@import 'layout/layout.css';
+@import 'theme/theme.css';
