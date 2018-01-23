@@ -25,6 +25,7 @@ h1+h2, h2[secondary] {
     font-weight: 400;
     text-align: center;
     padding: 4px 0 24px;
+    max-width: 600px;
 }
 
 h2,

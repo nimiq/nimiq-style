@@ -110,6 +110,7 @@ input[type="password"] {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     width: 100%;
     max-width: 368px;
+    margin: 16px 0;
 }
 
 
