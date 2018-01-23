@@ -49,6 +49,12 @@
         transform: scale(0.8) translateX(-50%);
         opacity: 0;
     }
+    25%{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 @keyframes from-right {

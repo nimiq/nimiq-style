@@ -67,7 +67,8 @@ main>* {
 }
 
 .x-view.x-exit-animation {
-    animation-name: to-left;
+    animation-name: from-left;
+    animation-direction: reverse;
 }
 
 @media (min-width: 420px) {
