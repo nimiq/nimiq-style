@@ -70,6 +70,13 @@
     }
 }
 
+@keyframes from-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+}
+
 .shake {
     animation-name: shake;
 }
@@ -98,12 +105,17 @@
     animation-name: from-right;
 }
 
+.from-bottom-in, .from-bottom-out {
+    animation-name: from-bottom;
+}
+
 .fade-out, .move-left-out, .move-right-out, .shrink-out,
-.from-left-out, .from-right-out {
+.from-left-out, .from-right-out, .from-bottom-out {
     animation-direction: reverse;
 }
 
 .shake, .fade-in, .fade-out, .move-left-in, .move-left-out, .move-right-in, .move-right-out,
-.shrink-in, .shrink-out, .from-left-in, .from-left-out, .from-right-in, .from-right-out {
+.shrink-in, .shrink-out, .from-left-in, .from-left-out, .from-right-in, .from-right-out,
+.from-bottom-in, .from-bottom-out {
     animation-duration: 0.5s;
 }
