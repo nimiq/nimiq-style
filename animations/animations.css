@@ -103,7 +103,7 @@
     animation-direction: reverse;
 }
 
-.shake, .fade-in, .fade-out, .move-left-in, .move-left-out, .shrink-in, .shrink-out,
-.from-left-in, .from-left-out, .from-right-in, .from-right-out {
+.shake, .fade-in, .fade-out, .move-left-in, .move-left-out, .move-right-in, .move-right-out,
+.shrink-in, .shrink-out, .from-left-in, .from-left-out, .from-right-in, .from-right-out {
     animation-duration: 0.5s;
 }
