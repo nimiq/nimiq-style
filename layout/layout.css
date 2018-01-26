@@ -41,6 +41,7 @@ main {
 
 
 
+
 /*  Views Layout */
 
 main {
@@ -62,7 +63,7 @@ main>* {
     box-sizing: border-box;
 }
 
-.x-view.x-show{
+.x-view.x-show {
     opacity: 1;
     z-index: 1;
 }
@@ -76,12 +77,26 @@ main>* {
     animation-direction: reverse;
 }
 
+x-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    box-sizing: border-box;
+    padding: 16px;
+}
+
 @media (min-width: 420px) {
     .x-view {
         padding: 32px 88px 48px;
         width: 100%;
         max-width: 800px;
         max-height: 672px;
+    }
+
+    .x-view x-header {
+        padding: 8px 16px;
     }
 }
 

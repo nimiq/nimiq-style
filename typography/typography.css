@@ -55,14 +55,25 @@ p a {
 }
 
 
-a[secondary] {
+[secondary] {
     font-size: 15px;
     font-weight: 800;
+    cursor:  pointer;
+    display: inline-block;
 }
 
-a[secondary]+[button] {
+[secondary]+button,
+[secondary]+[button] {
     margin-top: 40px;
 }
+
+[secondary]+[secondary],
+button+[secondary],
+[button]+[secondary] {
+    margin-top: 32px;
+}
+
+
 
 li {
     line-height: 24px;
