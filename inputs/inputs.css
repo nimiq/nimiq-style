@@ -19,7 +19,6 @@ button,
     cursor: pointer;
     user-select: none;
     box-shadow: rgba(0, 0, 0, 0.5) 1px 2px 3px;
-    box-sizing: border-box;
     outline: none;
     border: none;
     line-height: 53px;
@@ -149,7 +148,6 @@ input[type=range]::-moz-range-thumb {
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -11px;
-    box-sizing: border-box;
 }
 
 
@@ -163,7 +161,6 @@ input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -11px;
-    box-sizing: border-box;
 }
 
 input[type=range]::-ms-thumb {
@@ -175,7 +172,6 @@ input[type=range]::-ms-thumb {
     background: white;
     cursor: pointer;
     margin-top: -11px;
-    box-sizing: border-box;
 }
 
 input[type=range]::-moz-range-progress {
