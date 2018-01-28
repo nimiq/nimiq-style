@@ -3,10 +3,12 @@
     --primary-background: linear-gradient(#536DFE, #a553fe);
     /* teal-a200 */
     --success-color: #64FFDA;
-    /* red-a100 */
-    --error-color: #FF8A80;
-    --warning-color: red;
+    /* red-a400 */
+    --error-color: #FF1744;
+    /* amber a400 */
+    --warning-color: #FFC400;
     --secondary-text-color: rgba(0, 0, 0, 0.7);
     --secondary-cta-color: rgba(255, 255, 255, 0.7);
     --box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    --max-width: 368px;
 }
