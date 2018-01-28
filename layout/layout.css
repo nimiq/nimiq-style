@@ -7,6 +7,11 @@ body {
     margin: 0;
     background: #EEEEEE;
     color: white;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 x-grow,
