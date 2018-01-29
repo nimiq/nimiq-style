@@ -6,7 +6,7 @@ button,
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    height: 72px;
+    height: 64px;
     width: 100%;
     max-width: 368px;
     border-radius: 28px;
@@ -21,7 +21,7 @@ button,
     box-shadow: rgba(0, 0, 0, 0.5) 1px 2px 3px;
     outline: none;
     border: none;
-    line-height: 53px;
+    line-height: 48px;
     border: 1px solid white;
     margin-bottom: 4px;
 }
