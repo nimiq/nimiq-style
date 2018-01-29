@@ -44,6 +44,10 @@
     from { transform: scale(1.1); }
 }
 
+@keyframes grow {
+    from { transform: scale(0.9); }
+}
+
 @keyframes from-left {
     from {
         transform: scale(0.8) translateX(-50%);
@@ -97,6 +101,10 @@
     animation-name: shrink;
 }
 
+.grow-in, .grow-out {
+    animation-name: grow;
+}
+
 .from-left-in, .from-left-out {
     animation-name: from-left;
 }
@@ -109,13 +117,13 @@
     animation-name: from-bottom;
 }
 
-.fade-out, .move-left-out, .move-right-out, .shrink-out,
+.fade-out, .move-left-out, .move-right-out, .shrink-out, .grow-out,
 .from-left-out, .from-right-out, .from-bottom-out {
     animation-direction: reverse;
 }
 
 .shake, .fade-in, .fade-out, .move-left-in, .move-left-out, .move-right-in, .move-right-out,
-.shrink-in, .shrink-out, .from-left-in, .from-left-out, .from-right-in, .from-right-out,
+.shrink-in, .shrink-out, .grow-in, .grow-out, .from-left-in, .from-left-out, .from-right-in, .from-right-out,
 .from-bottom-in, .from-bottom-out {
     animation-duration: 0.5s;
 }
