@@ -2,7 +2,8 @@
 [icon-export],
 [icon-paste],
 [icon-upload],
-[icon-person] {
+[icon-person],
+[icon-warning] {
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
