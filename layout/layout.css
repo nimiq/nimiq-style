@@ -106,3 +106,13 @@ x-header {
         max-height: 672px;
     }
 }
+
+/* Lists */
+
+ul{
+    padding-left: 24px;
+}
+
+ul > li {
+    padding-bottom: 8px;
+}
