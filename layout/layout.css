@@ -46,7 +46,6 @@ main {
 main {
     background: var(--primary-background);
     flex-grow: 1;
-    position: relative;
 }
 
 main>* {
