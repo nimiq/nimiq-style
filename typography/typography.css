@@ -70,7 +70,8 @@ p a {
 [secondary]+[secondary],
 button+[secondary],
 [button]+[secondary] {
-    margin-top: 32px;
+    margin-top: 24px;
+    margin-bottom:  8px;
 }
 
 
