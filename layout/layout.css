@@ -38,17 +38,9 @@ main {
     left: 0;
 }
 
-
-
-
 /*  Views Layout */
 
-main {
-    background: var(--primary-background);
-    flex-grow: 1;
-}
-
-main>* {
+body > * {
     position: absolute;
 }
 
