@@ -24,6 +24,7 @@ button,
     line-height: 53px;
     border: 1px solid white;
     margin-bottom: 4px;
+    min-height: 56px;
 }
 
 button[disabled],
