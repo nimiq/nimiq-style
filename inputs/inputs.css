@@ -43,6 +43,7 @@ button.small,
     padding: 0 15px;
     height: 40px;
     line-height: 38px;
+    min-height: 40px;
 }
 
 
