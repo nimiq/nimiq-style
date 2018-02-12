@@ -46,6 +46,17 @@ button.small,
     min-height: 40px;
 }
 
+button.small.fixed-size,
+[button].small.fixed-size {
+    width: 100%;
+}
+
+button.secondary,
+[button].secondary {
+    background: transparent;
+    color: white;
+}
+
 
 /* Text Inputs */
 
