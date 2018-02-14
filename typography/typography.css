@@ -58,7 +58,7 @@ p a {
     font-size: 15px;
     font-weight: 800;
     cursor:  pointer;
-    display: inline-block;
+    display: block;
 }
 
 [secondary]+button,
