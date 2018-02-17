@@ -7,6 +7,7 @@ body {
     margin: 0;
     color: white;
     box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
 }
 
 *, *:before, *:after {
