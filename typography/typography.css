@@ -54,7 +54,8 @@ p a {
 }
 
 
-[secondary] {
+a[secondary],
+button[secondary] {
     font-size: 15px;
     font-weight: 800;
     cursor:  pointer;
