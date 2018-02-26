@@ -4,6 +4,8 @@
 [icon-upload],
 [icon-person],
 [icon-warning],
+[icon-eye-off],
+[icon-eye],
 [icon-add] {
     width: 40px;
     height: 40px;
@@ -57,4 +59,12 @@
 
 [icon-add] {
     background-image: url('data:image/svg+xml,<svg fill="%23FFFFFF" height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>')
+}
+
+[icon-eye] {
+    background-image: url('data:image/svg+xml,<svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.7 7.6 1 12a11.8 11.8 0 0 0 22 0c-1.7-4.4-6-7.5-11-7.5z"/></svg>');
+}
+
+[icon-eye-off] {
+    background-image: url('data:image/svg+xml,<svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M11.8 9l3.2 3.2V12a3 3 0 0 0-3-3h-.2m-4.3.8l1.6 1.5-.1.7a3 3 0 0 0 3 3h.7l1.5 1.5a5 5 0 0 1-2.2.5 5 5 0 0 1-5-5c0-.8.2-1.5.5-2.2M2 4.3l2.3 2.3.4.4c-1.6 1.3-3 3-3.7 5a11.8 11.8 0 0 0 15.4 6.7l.4.4 3 2.9 1.2-1.3L3.3 3M12 7a5 5 0 0 1 5 5c0 .6-.1 1.3-.4 1.8l3 3c1.5-1.3 2.7-3 3.4-4.8A11.8 11.8 0 0 0 8 5.2l2.2 2.1A5 5 0 0 1 12 7z"/></svg>')
 }

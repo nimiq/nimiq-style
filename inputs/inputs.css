@@ -61,7 +61,7 @@ button.secondary,
 /* Text Inputs */
 
 input[type="text"],
-input[type="password"],
+input.password,
 input[type="number"] {
     border: none;
     outline: none;
@@ -79,7 +79,7 @@ input[type="number"] {
 }
 
 input[type="text"]::placeholder,
-input[type="password"]::placeholder,
+input.password::placeholder,
 input[type="number"]::placeholder,
 input[type="number"]::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.3);
@@ -88,7 +88,7 @@ input[type="number"]::-webkit-input-placeholder {
 }
 
 input[type="text"]:focus,
-input[type="password"]:focus {
+input.password:focus {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -121,7 +121,8 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-input[type="password"] {
+input.password
+{
     font-size: 18px;
     line-height: 32px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
