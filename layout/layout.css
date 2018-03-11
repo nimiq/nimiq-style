@@ -6,8 +6,15 @@ body {
     flex-grow: 1;
     margin: 0;
     color: white;
+    background: var(--primary-background);
     box-sizing: border-box;
     -webkit-overflow-scrolling: touch;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 *, *:before, *:after {
@@ -20,7 +27,6 @@ x-grow,
 }
 
 .center,
-.x-view,
 main {
     display: flex;
     justify-content: center;
