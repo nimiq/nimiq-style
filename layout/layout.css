@@ -45,35 +45,6 @@ main {
     left: 0;
 }
 
-/*  Views Layout */
-
-body > * {
-    position: absolute;
-}
-
-.x-view {
-    padding: 24px 16px;
-    /* Animations */
-    opacity: 0;
-    animation-fill-mode: both;
-    animation-duration: 500ms;
-    box-sizing: border-box;
-}
-
-.x-view.x-show {
-    opacity: 1;
-    z-index: 1;
-}
-
-.x-view.x-entry-animation {
-    animation-name: from-right;
-}
-
-.x-view.x-exit-animation {
-    animation-name: from-left;
-    animation-direction: reverse;
-}
-
 x-header {
     position: absolute;
     top: 0;
