@@ -89,3 +89,7 @@ ul > li, ol >li {
 .hidden {
     visibility: hidden;
 }
+
+iframe[name="keyguard"] {
+    display: none;
+}
