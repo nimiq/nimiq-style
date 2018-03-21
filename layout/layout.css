@@ -4,6 +4,8 @@ body {
     min-height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* stretch as far as possible on iPhone */
     margin: 0;
     color: white;
     background: var(--primary-background);
@@ -14,7 +16,6 @@ body {
 body {
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 *, *:before, *:after {
