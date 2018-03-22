@@ -57,6 +57,26 @@ button.secondary,
     color: white;
 }
 
+.nimiq-dark button,
+.nimiq-dark [button] {
+    background: var(--primary-background-toright);
+    border: 1px solid transparent;
+    color: white;
+}
+
+.nimiq-dark button.secondary,
+.nimiq-dark [button].secondary {
+    background: transparent;
+    color: #212121;
+    border: 1px solid #212121;
+}
+
+.nimiq-dark button[disabled],
+.nimiq-dark [button][disabled] {
+    background: transparent;
+    color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
 
 /* Text Inputs */
 

@@ -49,6 +49,10 @@ a {
     color: white;
 }
 
+.nimiq-dark a {
+    color: #212121;
+}
+
 p a {
     text-decoration: underline;
 }

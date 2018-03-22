@@ -13,6 +13,10 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+body .nimiq-dark {
+    color: #212121;
+}
+
 body {
     justify-content: center;
     align-items: center;
