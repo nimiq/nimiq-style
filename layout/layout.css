@@ -100,6 +100,7 @@ ul > li, ol >li {
     visibility: hidden;
 }
 
-iframe[name="keyguard"] {
+iframe[name="keyguard"],
+iframe[name="network"] {
     display: none;
 }
