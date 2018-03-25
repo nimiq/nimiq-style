@@ -67,14 +67,14 @@ button.secondary,
 .nimiq-dark button.secondary,
 .nimiq-dark [button].secondary {
     background: transparent;
-    color: #212121;
-    border: 1px solid #212121;
+    color: #3b3b3b;
+    border: 1px solid #3b3b3b;
 }
 
 .nimiq-dark button[disabled],
 .nimiq-dark [button][disabled] {
     background: transparent;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.48);
     border: 1px solid rgba(0, 0, 0, 0.15);
 }
 

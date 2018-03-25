@@ -50,7 +50,7 @@ a {
 }
 
 .nimiq-dark a {
-    color: #212121;
+    color: #3b3b3b;
 }
 
 p a {
@@ -64,6 +64,7 @@ button[secondary] {
     font-weight: 800;
     cursor:  pointer;
     display: block;
+    color: #5c5c5c;
 }
 
 [secondary]+button,
