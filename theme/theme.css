@@ -2,6 +2,7 @@
     --primary-color: #536DFE;
     --primary-background: linear-gradient(#536DFE, #a553fe);
     --primary-background-toright: linear-gradient(90deg, #536DFE, #a553fe);
+    --primary-background-progress: linear-gradient(90deg, #536DFE, #a553fe, #536DFE);
     /* teal-a200 */
     --success-color: #64FFDA;
     /* red-a400 */
