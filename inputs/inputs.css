@@ -60,6 +60,7 @@ button.secondary,
 .nimiq-dark button,
 .nimiq-dark [button] {
     background: var(--primary-background-toright);
+    /* background: var(--primary-color); */
     border: 1px solid transparent;
     color: white;
 }
@@ -89,7 +90,7 @@ input[type="number"] {
     color: white;
     width: 168px;
     text-align: center;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 0;
     font-size: 15px;
     font-family: inherit;
