@@ -57,13 +57,16 @@ p a {
     text-decoration: underline;
 }
 
-
 a[secondary],
 button[secondary] {
     font-size: 15px;
     font-weight: 800;
     cursor:  pointer;
     display: block;
+}
+
+.nimiq-dark a[secondary],
+.nimiq-dark button[secondary] {
     color: #5c5c5c;
 }
 
