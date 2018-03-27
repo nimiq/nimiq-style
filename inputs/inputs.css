@@ -225,3 +225,61 @@ input[type=range]:focus {
 select {
     height: 35px;
 }
+
+/* Popup menu styles */
+div.popupmenu {
+    position: relative;
+}
+
+div.popupmenu button {
+    /* border: 0; */
+    background: transparent;
+    color: #3b3b3b;
+    border: 1px solid transparent !important;
+    font-size: 13px;
+    width: 40px;
+    padding: 0;
+    height: 40px;
+    line-height: 38px;
+    min-height: 40px;
+    box-shadow: none;
+}
+
+div.popupmenu button:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+div.popupmenu > div {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: white;
+    z-index: 1;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 0 lightgray;
+}
+
+div.popupmenu:active > div,
+div.popupmenu > div:hover {
+    display: initial;
+}
+
+div.popupmenu > button[disabled] + div {
+    display: none !important;
+}
+
+div.popupmenu > div > button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    border-radius: 0;
+    padding: 4px 15px;
+    height: 48px;
+}
+
+div.popupmenu > div > button .material-icons {
+    margin-right: 9px;
+}
