@@ -247,7 +247,7 @@ div.popupmenu button {
 }
 
 div.popupmenu button:hover {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.075);
 }
 
 div.popupmenu > div {
