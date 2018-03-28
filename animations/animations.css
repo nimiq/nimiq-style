@@ -77,7 +77,7 @@
 @keyframes from-bottom {
     from {
         opacity: 0;
-        transform: translateY(20%);
+        transform: translateY(50px);
     }
     25%{
         opacity: 0;
@@ -116,7 +116,7 @@
 }
 
 .from-right-in, .from-right-out {
-    animation-name: from-right;
+    animation-name: from-bottom;
 }
 
 .from-bottom-in, .from-bottom-out {
@@ -126,10 +126,11 @@
 .fade-out, .move-left-out, .move-right-out, .shrink-out, .grow-out,
 .from-left-out, .from-right-out, .from-bottom-out {
     animation-direction: reverse;
+    display: none !important;
 }
 
 .shake, .fade-in, .fade-out, .move-left-in, .move-left-out, .move-right-in, .move-right-out,
 .shrink-in, .shrink-out, .grow-in, .grow-out, .from-left-in, .from-left-out, .from-right-in, .from-right-out,
 .from-bottom-in, .from-bottom-out {
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
 }
