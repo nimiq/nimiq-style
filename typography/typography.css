@@ -60,7 +60,7 @@ p a {
 a[secondary],
 button[secondary] {
     font-size: 15px;
-    font-weight: 800;
+    font-weight: 600;
     cursor:  pointer;
     display: block;
 }
