@@ -2,6 +2,12 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
+  /*
+  @asset(/libraries/nimiq-style/material-icons/MaterialIcons-Regular.eot)
+  @asset(/libraries/nimiq-style/material-icons/MaterialIcons-Regular.woff2)
+  @asset(/libraries/nimiq-style/material-icons/MaterialIcons-Regular.woff)
+  @asset(/libraries/nimiq-style/material-icons/MaterialIcons-Regular.ttf)
+   */
   src: url(/libraries/nimiq-style/material-icons/MaterialIcons-Regular.eot); /* For IE6-8 */
   src: local('Material Icons'),
        local('MaterialIcons-Regular'),
