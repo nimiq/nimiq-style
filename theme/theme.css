@@ -1,8 +1,9 @@
 :root {
-    --primary-color: #536DFE;
-    --primary-background: linear-gradient(#536DFE, #a553fe);
-    --primary-background-toright: linear-gradient(90deg, #536DFE, #a553fe);
-    --primary-background-progress: linear-gradient(90deg, #536DFE, #a553fe, #536DFE);
+    --primary-color: #536dfe;
+    --secondary-color: #a553fe;
+    --primary-background: linear-gradient(var(--primary-color), var(--secondary-color));
+    --primary-background-toright: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    --primary-background-progress: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--secondary-color));
     /* teal-a200 */
     --success-color: #64FFDA;
     /* red-a400 */
