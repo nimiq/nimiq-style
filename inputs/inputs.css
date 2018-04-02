@@ -40,7 +40,7 @@ button.small,
 [button].small {
     font-size: 13px;
     width: auto;
-    padding: 0 15px;
+    padding: 0 24px;
     height: 40px;
     line-height: 38px;
     min-height: 40px;
@@ -59,10 +59,12 @@ button.secondary,
 
 .nimiq-dark button,
 .nimiq-dark [button] {
-    background: var(--primary-background-toright);
+    background: var(--main-button-background);
     /* background: var(--primary-color); */
     border: 1px solid transparent;
     color: white;
+    letter-spacing: 0.16em;
+    font-weight: bold;
 }
 
 .nimiq-dark button.secondary,
