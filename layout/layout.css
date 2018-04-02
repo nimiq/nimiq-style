@@ -124,3 +124,7 @@ iframe[name="keyguard"],
 iframe[name="network"] {
     display: none;
 }
+
+.spacing-bottom {
+    margin-bottom: 20px;
+}
