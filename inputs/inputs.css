@@ -25,6 +25,7 @@ button,
     border: 1px solid white;
     margin-bottom: 4px;
     min-height: 56px;
+    font-family: inherit;
 }
 
 button[disabled],
