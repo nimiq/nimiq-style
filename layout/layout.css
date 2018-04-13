@@ -125,6 +125,22 @@ iframe[name="network"] {
     display: none;
 }
 
+.spacing-top {
+    margin-top: 36px;
+}
+
 .spacing-bottom {
     margin-bottom: 36px;
+}
+
+.-left {
+    text-align: left;
+}
+
+.-center {
+    text-align: center;
+}
+
+.-right {
+    text-align: right;
 }
