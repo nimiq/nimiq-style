@@ -60,6 +60,7 @@ button.secondary,
 [button].secondary {
     background: transparent;
     color: white;
+    box-shadow: none;
 }
 
 .nimiq-dark button,
@@ -134,6 +135,7 @@ input.password:focus {
 }
 
 .nimiq-dark input[type="text"]:focus,
+.nimiq-dark input[type="number"]:focus,
 .nimiq-dark input.password:focus {
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
