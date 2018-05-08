@@ -183,65 +183,93 @@ input.password {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
+select {
+    height: 35px;
+}
+
 /* Range Slider */
 
 input[type=range] {
     -webkit-appearance: none;
     width: 100%;
     max-width: 320px;
-    height: 56px;
-    padding: 0;
-    background: none;
-    overflow: hidden;
-}
-
-input[type=range]:focus {
-    outline: none;
+    margin-bottom: 8px;
+    cursor: pointer;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 2px;
-    cursor: pointer;
-    animate: 0.2s;
-    background: white;
+    height: 5px;
+    background: rgba(0, 0, 0, 0.1);
     border: none;
+    border-radius: 3px;
 }
 
-.nimiq-dark input[type=range]::-webkit-slider-runnable-track {
-    background: #3b3b3b;
+input[type=range]::-moz-range-track {
+    height: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 3px;
 }
 
-input[type=range]::-moz-range-thumb,
-input[type=range]::-webkit-slider-thumb,
-input[type=range]::-ms-thumb {
-    box-shadow: rgba(0, 0, 0, 0.5) 0 2px 4px;
-    border: none;
-    height: 24px;
-    width: 24px;
-    border-radius: 50%;
-    background: white;
-    cursor: pointer;
+input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    margin-top: -11px;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: var(--main-button-background);
+    margin-top: -6px;
 }
 
-input[type=range]::-moz-range-progress {
-    background: white;
-}
-
-.nimiq-dark input[type=range]::-moz-range-thumb,
-.nimiq-dark input[type=range]::-webkit-slider-thumb,
-.nimiq-dark input[type=range]::-ms-thumb,
-.nimiq-dark input[type=range]::-moz-range-progress {
-    background: #3b3b3b;
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: var(--main-button-background);
 }
 
 input[type=range]:focus {
     outline: none;
-    /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
 }
 
-select {
-    height: 35px;
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+input[type=range]:focus::-moz-range-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+input[type=range]::-ms-track {
+    height: 5px;
+
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower,
+input[type=range]::-ms-fill-upper {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: var(--main-button-background);
+}
+
+input[type=range]:focus::-ms-fill-lower,
+input[type=range]:focus::-ms-fill-upper {
+    background: rgba(0, 0, 0, 0.2);
 }
