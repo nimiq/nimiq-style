@@ -6,7 +6,7 @@
     --primary-background-toright: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
     --primary-background-progress: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--secondary-color));
     /* teal-a200 */
-    --success-color: #64FFDA;
+    --success-color: #64FFDA; /* YML: #00E7B8 */
     /* red-a400 */
     --error-color: #FF1744;
     /* amber a400 */
