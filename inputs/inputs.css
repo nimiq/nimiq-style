@@ -1,94 +1,159 @@
 /* buttons */
 
-button::-moz-focus-inner {
+.nq-button::-moz-focus-inner,
+.nq-button-s::-moz-focus-inner {
     border: 0;
 }
 
-button,
-[button] {
-    font-size: 16px;
-    font-weight: 500;
+.nq-button {
+    height: 8rem;
+    line-height: 2.5rem;
+    background: var(--nimiq-blue);
+    background-image: var(--nimiq-blue-bg);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
-    height: 56px;
-    width: 100%;
-    max-width: 368px;
-    border-radius: 28px;
-    padding: 0 24px;
-    vertical-align: middle;
-    display: table-cell;
-    text-align: center;
-    background: white;
-    color: var(--primary-color);
-    cursor: pointer;
-    user-select: none;
-    box-shadow: rgba(0, 0, 0, 0.5) 1px 2px 3px;
-    outline: none;
+    letter-spacing: 0.094em;
     border: none;
-    line-height: 53px;
-    border: 1px solid white;
-    margin-bottom: 4px;
-    min-height: 56px;
+    padding: 0 4rem;
+    border-radius: 4rem;
+    width: calc(100% - 8rem);
+    margin: 2rem auto;
+    box-shadow: 0 0.5rem 1.75rem rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: transform 150ms, box-shadow 150ms;
+    text-decoration: none;
+    display: block;
+    text-align: center;
     font-family: inherit;
 }
 
-button[disabled],
-[button][disabled] {
+.nq-button:hover,
+.nq-button:active {
+    transform: translateY(0.25rem);
+    box-shadow: none;
+}
+
+.nq-button.wider {
+    width: calc(100% - 6rem);
+}
+
+.nq-button.full-width {
+    width: 100%;
+}
+
+.nq-button-s {
+    display: inline-block;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    height: 3.375rem;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.014em;
+    padding: 0 1.5rem;
+    background-color: rgba(31, 35, 72, 0.07); /* Based on Nimiq Blue */
+    color: var(--nimiq-blue);
+    border-radius: 1.6875rem;
+    transition: color 150ms, background-color 150ms;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    font-family: inherit;
+}
+
+.nq-button-s::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -2rem;
+    top: -2rem;
+    right: -2rem;
+    bottom: -2rem;
+}
+
+.nq-button-s:hover,
+.nq-button-s:active {
+    background-color: rgba(31, 35, 72, 0.12); /* Based on Nimiq Blue */
+}
+
+/* Color variations */
+
+/* light blue */
+.nq-button.light-blue {
+    background: var(--nimiq-light-blue);
+    background-image: var(--nimiq-light-blue-bg);
+}
+
+.nq-button-s.light-blue {
+    color: var(--nimiq-light-blue);
+    background-color: rgba(5, 130, 202, 0.07); /* Based on Nimiq Light Blue */
+}
+
+.nq-button-s.light-blue:hover,
+.nq-button-s.light-blue:active {
+    background-color: rgba(5, 130, 202, 0.12); /* Based on Nimiq Light Blue */
+}
+
+/* green */
+.nq-button.green {
+    background: var(--nimiq-green);
+    background-image: var(--nimiq-green-bg);
+}
+
+.nq-button-s.green {
+    color: var(--nimiq-green);
+    background-color: rgba(33, 188, 165, 0.07); /* Based on Nimiq Green */
+}
+
+.nq-button-s.green:hover,
+.nq-button-s.green:active {
+    background-color: rgba(33, 188, 165, 0.12); /* Based on Nimiq Green */
+}
+
+/* orange */
+.nq-button.orange {
+    background: var(--nimiq-orange);
+    background-image: var(--nimiq-orange-bg);
+}
+
+.nq-button-s.orange {
+    color: var(--nimiq-orange);
+    background-color: rgba(252, 135, 2, 0.07); /* Based on Nimiq Orange */
+}
+
+.nq-button-s.orange:hover,
+.nq-button-s.orange:active {
+    background-color: rgba(252, 135, 2, 0.12); /* Based on Nimiq Orange */
+}
+
+/* red */
+.nq-button.red {
+    background: var(--nimiq-red);
+    background-image: var(--nimiq-red-bg);
+}
+
+.nq-button-s.red {
+    color: var(--nimiq-red);
+    background-color: rgba(216, 65, 51, 0.07); /* Based on Nimiq Red */
+}
+
+.nq-button-s.red:hover,
+.nq-button-s.red:active {
+    background-color: rgba(216, 65, 51, 0.12); /* Based on Nimiq Red */
+}
+
+/* .nq-button[disabled] {
     background: transparent;
     box-shadow: none;
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.31);
     pointer-events: none;
-}
-
-button.small,
-[button].small {
-    font-size: 13px;
-    width: auto;
-    padding: 0 24px;
-    height: 40px;
-    line-height: 38px;
-    min-height: 40px;
-}
-
-button.small.fixed-size,
-[button].small.fixed-size {
-    width: 100%;
-}
-
-button.secondary,
-[button].secondary {
-    background: transparent;
-    color: white;
-    box-shadow: none;
-}
-
-.nimiq-dark button,
-.nimiq-dark [button] {
-    background: var(--main-button-background);
-    border: 1px solid transparent;
-    color: white;
-    letter-spacing: 0.16em;
-    font-weight: bold;
-}
-
-.nimiq-dark button.secondary,
-.nimiq-dark [button].secondary {
-    background: transparent;
-    color: #3b3b3b;
-    border: 1px solid #3b3b3b;
-}
-
-.nimiq-dark button[disabled],
-.nimiq-dark [button][disabled] {
-    background: transparent;
-    color: rgba(0, 0, 0, 0.48);
-    border: 1px solid rgba(0, 0, 0, 0.15);
-}
+} */
 
 /* Text Inputs */
 
-input[type="text"],
+/* input[type="text"],
 input.password,
 input[type="number"] {
     border: none;
@@ -104,43 +169,43 @@ input[type="number"] {
     font-style: inherit;
     font-variant: inherit;
     padding: 1px;
-}
+} */
 
-.nimiq-dark input[type="text"],
+/* .nimiq-dark input[type="text"],
 .nimiq-dark input.password,
 .nimiq-dark input[type="number"] {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     color: #3b3b3b;
-}
+} */
 
-input[type="text"]::placeholder,
+/* input[type="text"]::placeholder,
 input.password::placeholder,
 input[type="number"]::placeholder,
 input[type="number"]::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.3);
     text-align: center;
     display: block;
-}
+} */
 
-.nimiq-dark input[type="text"]::placeholder,
+/* .nimiq-dark input[type="text"]::placeholder,
 .nimiq-dark input.password::placeholder,
 .nimiq-dark input[type="number"]::placeholder,
 .nimiq-dark input[type="number"]::-webkit-input-placeholder {
     color: rgba(0, 0, 0, 0.3);
-}
+} */
 
-input[type="text"]:focus,
+/* input[type="text"]:focus,
 input.password:focus {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
+} */
 
-.nimiq-dark input[type="text"]:focus,
+/* .nimiq-dark input[type="text"]:focus,
 .nimiq-dark input[type="number"]:focus,
 .nimiq-dark input.password:focus {
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-}
+} */
 
-input[type="text"].small {
+/* input[type="text"].small {
     font-size: 15px;
 }
 
@@ -151,9 +216,9 @@ input[type="text"].small:placeholder-shown {
 input[type="number"] {
     font-size: 56px;
     padding-bottom: 0;
-}
+} */
 
-input[type="number"]::-webkit-input-placeholder,
+/* input[type="number"]::-webkit-input-placeholder,
 input[type="number"]::placeholder {
     font-size: 56px;
     color: rgba(255, 255, 255, 0.3);
@@ -162,9 +227,9 @@ input[type="number"]::placeholder {
 .nimiq-dark input[type="number"]::-webkit-input-placeholder,
 .nimiq-dark input[type="number"]::placeholder {
     color: rgba(0, 0, 0, 0.3);
-}
+} */
 
-input::-webkit-outer-spin-button,
+/* input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
@@ -181,15 +246,15 @@ input.password {
 
 .nimiq-dark input.password {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
+} */
 
-select {
+/* select {
     height: 35px;
-}
+} */
 
 /* Range Slider */
 
-input[type=range] {
+/* input[type=range] {
     -webkit-appearance: none;
     width: 100%;
     max-width: 320px;
@@ -239,23 +304,23 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 input[type=range]:focus::-moz-range-track {
     background: rgba(0, 0, 0, 0.2);
-}
+} */
 
-input[type=range]::-ms-track {
-    height: 5px;
+/* input[type=range]::-ms-track {
+    height: 5px; */
 
     /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
-    background: transparent;
+    /* background: transparent; */
 
     /*leave room for the larger thumb to overflow with a transparent border */
-    border-color: transparent;
-    border-width: 6px 0;
+    /* border-color: transparent;
+    border-width: 6px 0; */
 
     /*remove default tick marks*/
-    color: transparent;
-}
+    /* color: transparent;
+} */
 
-input[type=range]::-ms-fill-lower,
+/* input[type=range]::-ms-fill-lower,
 input[type=range]::-ms-fill-upper {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -272,4 +337,4 @@ input[type=range]::-ms-thumb {
 input[type=range]:focus::-ms-fill-lower,
 input[type=range]:focus::-ms-fill-upper {
     background: rgba(0, 0, 0, 0.2);
-}
+} */

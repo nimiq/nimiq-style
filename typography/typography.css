@@ -1,105 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700');
+
 html {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 8px;
+    --nimiq-size: 8px;
+
+    font-family: 'Muli', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
 
 body {
-    font-size: 15px;
+    font-size: 2.25rem; /* 18px */
 }
 
-h1,
-.h1 {
-    font-size: 28px;
-    font-weight: 300;
-    max-width: 100%;
-    text-align: center;
-    padding: 0;
+.nq-h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: bold;
+    margin: 2rem 0;
 }
 
-h1+h2, h2[secondary] {
-    font-size: 15px;
-    font-weight: 400;
-    text-align: center;
-    padding: 4px 0 24px;
-    max-width: 600px;
+.nq-h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
 }
 
-h2,
-.h2 {
-    font-size: 24px;
-    font-weight: 300;
+.nq-text {
+    font-size: 2rem;
+    line-height: 1.375;
+    opacity: 0.7;
+    margin: 1.5rem 0;
 }
 
-h1,
-h2,
-p {
-    margin: 0;
-}
-
-
-p {
-    text-align: center;
-    line-height: 19px;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-.nimiq-dark a {
-    color: #3b3b3b;
-}
-
-p a {
-    text-decoration: underline;
-}
-
-a[secondary],
-button[secondary] {
-    font-size: 13px;
+.nq-text-s {
+    font-size: 1.75rem;
+    line-height: 1.1;
     font-weight: 600;
-    cursor:  pointer;
+}
+
+.nq-label {
+    font-size: 1.75rem;
+    line-height: 1.5rem;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.16em;
-    display: block;
+    letter-spacing: 0.107em;
+    opacity: 0.7;
 }
 
-.nimiq-dark a[secondary],
-.nimiq-dark button[secondary] {
-    color: #5c5c5c;
+.nq-link {
+    color: var(--nimiq-light-blue);
+    text-decoration: none;
 }
 
-[secondary]+button,
-[secondary]+[button] {
-    margin-top: 40px;
-}
-
-[secondary]+[secondary],
-button+[secondary],
-[button]+[secondary] {
-    margin-top: 24px;
-    margin-bottom:  8px;
-}
-
-
-
-li {
-    line-height: 24px;
-    text-align: left;
-}
-
-@media (max-width: 320px) {
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {}
-
-    h1+h2 {
-        font-size: 13px;
-        padding-bottom: 8px;
-    }
+.nq-link:active,
+.nq-link:hover {
+    text-decoration: underline;
 }

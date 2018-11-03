@@ -4,61 +4,148 @@
         <title>Nimiq Style Overview</title>
         <link rel="stylesheet" href="./nimiq-style.css">
         <style>
-            div {
-                width: 100%;
-                padding: 2em;
-                text-align: center;
+            body {
+                padding: 5rem 0;
             }
 
-            div > p {
-                max-width: 960px;
-                margin: 0 auto;
+            header {
+                text-align: center;
+                margin-bottom: 7rem;
+            }
+
+            .content {
+                width: 100%;
+                max-width: 600px;
+                margin: auto;
+            }
+
+            .color-swatches {
+                overflow: auto;
+            }
+
+            .color-swatch {
+                padding: 4rem 3rem;
+                margin: 0 3rem 3rem 0;
+                border-radius: 1rem;
+                width: 28rem;
+                float: left;
+                font-weight: bold;
             }
         </style>
     </head>
     <body>
-        <div style="background: var(--primary-background);">
-            <h1>Heading H1</h1>
-            <h2>Heading H1+H2</h2>
-            <span></span>
-            <h2>Heading H2</h2>
-            <h3>Heading H3</h3>
-            <h4>Heading H4</h4>
-            <h5>Heading H5</h5>
-            <h6>Heading H6</h6>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <a href="#"></a>Richard McClintock</a>, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (<a href="#">The Extremes of Good and Evil</a>) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-            <br>
-            <a href="#">link (a)</a><br>
-            <br>
-            <button>button</button>
-            <a href="#" secondary>a[secondary]</a>
-            <button disabled>button[disabled]</button><br>
-            <br>
-            <button class="secondary">button.secondary</button><br>
-            <br>
-            <button class="small">button.small</button>
-        </div>
+        <div class="content">
+            <header>
+                <h1 class="nq-h1">Nimiq Style</h1>
+                <p class="nq-text">The Nimiq style framework.</p>
+            </header>
 
-        <div style="background: white;" class="nimiq-dark">
-            <h1>Heading H1</h1>
-            <h2>Heading H1+H2</h2>
-            <span></span>
-            <h2>Heading H2</h2>
-            <h3>Heading H3</h3>
-            <h4>Heading H4</h4>
-            <h5>Heading H5</h5>
-            <h6>Heading H6</h6>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <a href="#"></a>Richard McClintock</a>, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (<a href="#">The Extremes of Good and Evil</a>) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-            <br>
-            <a href="#">link (a)</a><br>
-            <br>
-            <button>button</button>
-            <a href="#" secondary>a[secondary]</a>
-            <button disabled>button[disabled]</button><br>
-            <br>
-            <button class="secondary">button.secondary</button><br>
-            <br>
-            <button class="small">button.small</button>
+            <div class="nq-card">
+                <div class="nq-card-header">
+                        <h1 class="nq-h1">Typography</h1>
+                </div>
+                <div class="nq-card-body">
+                    <h1 class="nq-h1">Heading H1</h1>
+                    <h2 class="nq-h2">Heading H2</h2>
+
+                    <p class="nq-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+
+                    <a class="nq-link" href="#">I am a link</a>
+
+                    <p class="nq-text-s">This is small text.</p>
+
+                    <span class="nq-label">Label</span>
+                </div>
+            </div>
+
+            <div class="nq-card">
+                <div class="nq-card-header">
+                        <h1 class="nq-h1">Colors</h1>
+                </div>
+                <div class="nq-card-body">
+                    <p class="nq-blue">Nimiq Blue</p>
+                    <p class="nq-light-blue">Nimiq Light Blue</p>
+                    <p class="nq-gold">Nimiq Gold</p>
+                    <p class="nq-green">Nimiq Green</p>
+                    <p class="nq-orange">Nimiq Orange</p>
+                    <p class="nq-red">Nimiq Red</p>
+
+                    <div class="color-swatches">
+                        <div class="color-swatch nq-bg-blue">
+                            Text on colored background is white.
+                        </div>
+
+                        <div class="color-swatch nq-bg-light-blue">
+                            Text on colored background is white.
+                        </div>
+
+                        <div class="color-swatch nq-bg-gold">
+                            Text on colored background is white.
+                        </div>
+
+                        <div class="color-swatch nq-bg-green">
+                            Text on colored background is white.
+                        </div>
+
+                        <div class="color-swatch nq-bg-orange">
+                            Text on colored background is white.
+                        </div>
+
+                        <div class="color-swatch nq-bg-red">
+                            Text on colored background is white.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nq-card">
+                <div class="nq-card-header">
+                        <h1 class="nq-h1">Buttons</h1>
+                </div>
+                <div class="nq-card-body">
+                    <h2 class="nq-h2">Primary buttons</h2>
+                    <button class="nq-button">Regular button</button>
+                    <button class="nq-button wider">Wider button</button>
+                    <button class="nq-button full-width">Full-width button</button>
+
+                    <h2 class="nq-h2 margin-top-5">Small buttons</h2>
+                    <button class="nq-button-s">Small button</button>
+
+                    <h2 class="nq-h2 margin-top-5">Colored primary buttons</h2>
+                    <button class="nq-button light-blue">Light-blue button</button>
+                    <button class="nq-button green">Green button</button>
+                    <button class="nq-button orange">Orange button</button>
+                    <button class="nq-button red">Red button</button>
+
+                    <h2 class="nq-h2 margin-top-5">Colored small buttons</h2>
+                    <button class="nq-button-s light-blue">Light-blue button</button>
+                    <button class="nq-button-s green">Green button</button>
+                    <button class="nq-button-s orange">Orange button</button>
+                    <button class="nq-button-s red">Red button</button>
+                </div>
+            </div>
+
+            <!-- <div style="background: white;" class="nimiq-dark">
+                <h1>Heading H1</h1>
+                <h2>Heading H1+H2</h2>
+                <span></span>
+                <h2>Heading H2</h2>
+                <h3>Heading H3</h3>
+                <h4>Heading H4</h4>
+                <h5>Heading H5</h5>
+                <h6>Heading H6</h6>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <a href="#"></a>Richard McClintock</a>, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (<a href="#">The Extremes of Good and Evil</a>) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                <br>
+                <a href="#">link (a)</a><br>
+                <br>
+                <button>button</button>
+                <a href="#" secondary>a[secondary]</a>
+                <button disabled>button[disabled]</button><br>
+                <br>
+                <button class="secondary">button.secondary</button><br>
+                <br>
+                <button class="small">button.small</button>
+            </div> -->
         </div>
     </body>
 </html>

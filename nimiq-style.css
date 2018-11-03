@@ -1,7 +1,8 @@
-@import 'animations/animations.css';
-@import 'icons/icons.css';
-@import 'inputs/inputs.css';
-@import 'layout/layout.css';
-@import 'material-icons/material-icons.css';
 @import 'theme/theme.css';
 @import 'typography/typography.css';
+@import 'inputs/inputs.css';
+@import 'layout/layout.css';
+
+/* @import 'material-icons/material-icons.css'; */
+/* @import 'animations/animations.css'; */
+/* @import 'icons/icons.css'; */
