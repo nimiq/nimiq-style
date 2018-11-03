@@ -1,0 +1,29 @@
+{
+  "name": "@nimiq/style",
+  "version": "0.1.0",
+  "description": "The Nimiq style framework.",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nimiq/nimiq-style.git"
+  },
+  "main": "nimiq-style.min.css",
+  "author": "Nimiq Network Ltd.",
+  "license": "MIT",
+  "files": [
+    "nimiq-style.min.css"
+  ],
+  "scripts": {
+    "build": "cleancss -o nimiq-style.min.css src/main.css"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^4.2.1"
+  },
+  "bugs": {
+    "url": "https://github.com/nimiq/nimiq-style/issues"
+  },
+  "homepage": "https://github.com/nimiq/nimiq-style#readme",
+  "keywords": [
+    "nimiq",
+    "style"
+  ]
+}

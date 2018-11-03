@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700');
-
 html {
     font-size: 8px;
     --nimiq-size: 8px;
 
-    font-family: 'Muli', sans-serif;
+    font-family: 'Muli', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
