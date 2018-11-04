@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Nimiq Style Overview</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,600,700">
         <link rel="stylesheet" href="./src/main.css">
         <style>
-            body {
-                padding: 5rem 0;
-            }
-
             .content {
                 width: 100%;
-                max-width: 600px;
+                max-width: 900px;
                 margin: auto;
-            }
-
-            .table-of-contents {
-                margin-bottom: 10rem;
             }
 
             header {
                 text-align: center;
-                margin-bottom: 7rem;
+                padding: 5rem 0;
+                margin-bottom: 5rem;
+            }
+
+            .links {
+                text-align: center;
+                margin-bottom: 5rem;
+            }
+
+            #contents,
+            #installation {
+                padding: 2rem;
+            }
+
+            .nq-card {
+                margin: 10rem auto;
             }
 
             .code {
@@ -29,12 +39,18 @@
                 font-size: 1.75rem;
                 line-height: 3rem;
                 font-family: monospace;
-                border-top: 1px solid rgba(31, 35, 72, 0.07);
-                border-bottom: 1px solid rgba(31, 35, 72, 0.07);
+                border: 1px solid rgba(31, 35, 72, 0.07);
+                border-radius: 0.5rem;
                 padding: 3rem 4rem;
                 background: ivory;
                 color: dimgray;
                 overflow: auto;
+            }
+
+            .nq-card .code {
+                border-left: none;
+                border-right: none;
+                border-radius: 0;
             }
 
             .code + .code {
@@ -63,43 +79,50 @@
                 float: left;
                 font-weight: bold;
             }
+
+            .small-buttons .nq-button-s:not(:first-child) {
+                margin-top: 1rem;
+            }
         </style>
     </head>
     <body>
         <div class="content">
-            <header>
+            <header class="nq-bg-light-blue">
                 <h1 class="nq-h1">Nimiq Style</h1>
-                <p class="nq-text">The Nimiq style framework.</p>
+                <p class="nq-label">The Nimiq style framework.</p>
             </header>
 
-            <h2 class="nq-h2">Contents</h2>
-            <ul class="table-of-contents">
-                <li><a class="nq-link" href="#installation">Installation</a></li>
-                <li><a class="nq-link" href="#typography">Typography</a></li>
-                <li><a class="nq-link" href="#colors">Colors</a></li>
-                <li><a class="nq-link" href="#primary-buttons">Primary Buttons</a></li>
-                <li><a class="nq-link" href="#small-buttons">Small Buttons</a></li>
-            </ul>
+            <div class="links">
+                <p class="nq-text-s">
+                    <a class="nq-link" href="https://github.com/nimiq/nimiq-style">Github</a> |
+                    <a class="nq-link" href="https://nimiq.com/styleguide">Styleguide</a>
+                    (<a class="nq-link" href="https://nimiq.com/styleguide/styleguide.pdf">mobile</a>)
+                </p>
+            </div>
 
-            <div class="nq-card" id="installation">
-                <div class="nq-card-header">
-                    <h1 class="nq-h1">Installation</h1>
-                </div>
-                <div class="nq-card-body installation">
-                    <h2 class="nq-h2">Include via NPM</h2>
-                </div>
+            <div id="contents">
+                <h2 class="nq-h2">Contents</h2>
+                <ul class="table-of-contents">
+                    <li><a class="nq-link" href="#installation">Installation</a></li>
+                    <li><a class="nq-link" href="#typography">Typography</a></li>
+                    <li><a class="nq-link" href="#colors">Colors</a></li>
+                    <li><a class="nq-link" href="#primary-buttons">Primary Buttons</a></li>
+                    <li><a class="nq-link" href="#small-buttons">Small Buttons</a></li>
+                </ul>
+            </div>
+
+            <div id="installation">
+                <h2 class="nq-h2">Installation</h2>
+
+                <h3 class="nq-h3">Include via NPM</h3>
                 <div class="code">yarn add @nimiq/style</div>
                 <div class="code">@import 'node_modules/@nimiq/style/nimiq-style.min.css';</div>
 
-                <div class="nq-card-body installation">
-                    <h2 class="nq-h2">Include via CDN</h2>
-                </div>
+                <h3 class="nq-h3">Include via CDN</h3>
                 <div class="code">&lt;link href="<b>https://cdn.jsdelivr.net/npm/@nimiq/style@v0/nimiq-style.min.css</b>" rel="stylesheet"></div>
 
-                <div class="nq-card-body installation">
-                    <h2 class="nq-h2">Font</h2>
-                    <p class="nq-text">To use the `Muli` font, include it from Google Fonts:</p>
-                </div>
+                <h3 class="nq-h3">Font</h3>
+                <p class="nq-text">To use the 'Muli' font, include it from Google Fonts:</p>
                 <div class="code">&lt;link href="<b>https://fonts.googleapis.com/css?family=Muli:400,600,700</b>" rel="stylesheet"></div>
             </div>
 
@@ -110,6 +133,7 @@
                 <div class="nq-card-body typography">
                     <h1 class="nq-h1">Heading H1</h1>
                     <h2 class="nq-h2">Heading H2</h2>
+                    <h3 class="nq-h3">Heading H3</h3>
 
                     <p class="nq-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
 
@@ -122,6 +146,7 @@
 
                 <div class="code">&lt;h1 class="<b>nq-h1</b>">Heading H1&lt;/h1>
 &lt;h2 class="<b>nq-h2</b>">Heading H2&lt;/h2>
+&lt;h3 class="<b>nq-h3</b>">Heading H3&lt;/h3>
 &lt;p class="<b>nq-text</b>">Contrary...&lt;/p>
 &lt;a class="<b>nq-link</b>">I am a link&lt;/a>
 &lt;p class="<b>nq-text-s</b>">This is small text.&lt;/p>
