@@ -11,11 +11,11 @@ yarn add @nimiq/style
 
 ## Include via CDN
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@nimiq/style/nimiq-style.min.css">
+<link href="https://cdn.jsdelivr.net/npm/@nimiq/style@v0/nimiq-style.min.css" rel="stylesheet">
 ```
 
 ## Font
 To use the `Muli` font, include it from Google Fonts:
 ```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,600,700">
+<link href="https://fonts.googleapis.com/css?family=Muli:400,600,700" rel="stylesheet">
 ```
