@@ -1,6 +1,9 @@
 # Nimiq Style
 The Nimiq style framework.
 
+## Documentation
+https://cdn.staticaly.com/gh/nimiq/nimiq-style/next/
+
 ## Include via NPM
 ```bash
 yarn add @nimiq/style
