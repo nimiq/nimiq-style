@@ -18,7 +18,7 @@
     border: none;
     padding: 0 4rem;
     border-radius: 4rem;
-    width: calc(100% - 8rem);
+    min-width: 25rem;
     margin: 2rem auto;
     box-shadow: 0 0.5rem 1.75rem rgba(0, 0, 0, 0.15);
     cursor: pointer;
@@ -33,14 +33,6 @@
 .nq-button:active {
     transform: translateY(0.25rem);
     box-shadow: none;
-}
-
-.nq-button.wider {
-    width: calc(100% - 6rem);
-}
-
-.nq-button.full-width {
-    width: 100%;
 }
 
 .nq-button-s {
