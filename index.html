@@ -26,8 +26,15 @@
             }
 
             #contents,
-            #installation {
+            #installation,
+            #cards,
+            #footer {
                 padding: 2rem;
+            }
+
+            #footer {
+                text-align: center;
+                padding-bottom: 4rem !important;
             }
 
             .nq-card {
@@ -83,13 +90,26 @@
             .small-buttons .nq-button-s:not(:first-child) {
                 margin-top: 1rem;
             }
+
+            @media (max-width: 450px) {
+                #contents,
+                #installation,
+                #cards,
+                #footer {
+                    padding: 1rem;
+                }
+
+                .code {
+                    padding: 3rem;
+                }
+            }
         </style>
     </head>
     <body>
         <div class="content">
-            <header class="nq-bg-light-blue">
+            <header id="top" class="nq-bg-light-blue">
                 <h1 class="nq-h1">Nimiq Style</h1>
-                <p class="nq-label">The Nimiq style framework.</p>
+                <p class="nq-label">The Nimiq CSS framework</p>
             </header>
 
             <div class="links">
@@ -102,7 +122,7 @@
 
             <div id="contents">
                 <h2 class="nq-h2">Contents</h2>
-                <ul class="table-of-contents">
+                <ul class="table-of-contents nq-list">
                     <li><a class="nq-link" href="#installation">Installation</a></li>
                     <li><a class="nq-link" href="#typography">Typography</a></li>
                     <li><a class="nq-link" href="#colors">Colors</a></li>
@@ -122,139 +142,147 @@
                 <div class="code">&lt;link href="<b>https://cdn.jsdelivr.net/npm/@nimiq/style@v0/nimiq-style.min.css</b>" rel="stylesheet"></div>
 
                 <h3 class="nq-h3">Font</h3>
-                <p class="nq-text">To use the 'Muli' font, include it from Google Fonts:</p>
+                <p class="nq-text">To use Nimiq's default 'Muli' font, include it from Google Fonts:</p>
                 <div class="code">&lt;link href="<b>https://fonts.googleapis.com/css?family=Muli:400,600,700</b>" rel="stylesheet"></div>
+                <p class="nq-text">To display account numbers in Nimiq's 'Fira Mono' font, include the subset from Google Fonts:</p>
+                <div class="code">&lt;link href="<b>https://fonts.googleapis.com/css?family=Fira+Mono&text=0123456789ABCDEFGHJKLMNPQRSTUVXY</b>" rel="stylesheet"></div>
             </div>
 
-            <div class="nq-card" id="typography">
-                <div class="nq-card-header">
-                    <h1 class="nq-h1">Typography</h1>
-                </div>
-                <div class="nq-card-body typography">
-                    <h1 class="nq-h1">Heading H1</h1>
-                    <h2 class="nq-h2">Heading H2</h2>
-                    <h3 class="nq-h3">Heading H3</h3>
+            <div id="cards">
+                <div class="nq-card" id="typography">
+                    <div class="nq-card-header">
+                        <h1 class="nq-h1">Typography</h1>
+                    </div>
+                    <div class="nq-card-body typography">
+                        <h1 class="nq-h1">Heading H1</h1>
+                        <h2 class="nq-h2">Heading H2</h2>
+                        <h3 class="nq-h3">Heading H3</h3>
 
-                    <p class="nq-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <p class="nq-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
 
-                    <a class="nq-link" href="#">I am a link</a>
+                        <a class="nq-link" href="#">I am a link</a>
 
-                    <p class="nq-text-s">This is small text.</p>
+                        <p class="nq-text-s">This is small text.</p>
 
-                    <span class="nq-label">Label</span>
-                </div>
+                        <span class="nq-label">Label</span>
+                    </div>
 
-                <div class="code">&lt;h1 class="<b>nq-h1</b>">Heading H1&lt;/h1>
+                    <div class="code">&lt;h1 class="<b>nq-h1</b>">Heading H1&lt;/h1>
 &lt;h2 class="<b>nq-h2</b>">Heading H2&lt;/h2>
 &lt;h3 class="<b>nq-h3</b>">Heading H3&lt;/h3>
 &lt;p class="<b>nq-text</b>">Contrary...&lt;/p>
 &lt;a class="<b>nq-link</b>">I am a link&lt;/a>
 &lt;p class="<b>nq-text-s</b>">This is small text.&lt;/p>
 &lt;span class="<b>nq-label</b>">Label&lt;/span></div>
-            </div>
-
-            <div class="nq-card" id="colors">
-                <div class="nq-card-header">
-                    <h1 class="nq-h1">Colors</h1>
-                </div>
-                <div class="nq-card-body text-colors">
-                    <p class="nq-blue">Nimiq Blue</p>
-                    <p class="nq-light-blue">Nimiq Light Blue</p>
-                    <p class="nq-gold">Nimiq Gold</p>
-                    <p class="nq-green">Nimiq Green</p>
-                    <p class="nq-orange">Nimiq Orange</p>
-                    <p class="nq-red">Nimiq Red</p>
                 </div>
 
-                <div class="code">&lt;p class="<b>nq-blue</b>">Nimiq Blue&lt;/p>
+                <div class="nq-card" id="colors">
+                    <div class="nq-card-header">
+                        <h1 class="nq-h1">Colors</h1>
+                    </div>
+                    <div class="nq-card-body text-colors">
+                        <p class="nq-blue">Nimiq Blue</p>
+                        <p class="nq-light-blue">Nimiq Light Blue</p>
+                        <p class="nq-gold">Nimiq Gold</p>
+                        <p class="nq-green">Nimiq Green</p>
+                        <p class="nq-orange">Nimiq Orange</p>
+                        <p class="nq-red">Nimiq Red</p>
+                    </div>
+
+                    <div class="code">&lt;p class="<b>nq-blue</b>">Nimiq Blue&lt;/p>
 &lt;p class="<b>nq-light-blue</b>">Nimiq Light Blue&lt;/p>
 &lt;p class="<b>nq-gold</b>">Nimiq Gold&lt;/p>
 &lt;p class="<b>nq-green</b>">Nimiq Green&lt;/p>
 &lt;p class="<b>nq-orange</b>">Nimiq Orange&lt;/p>
 &lt;p class="<b>nq-red</b>">Nimiq Red&lt;/p></div>
 
-                <div class="nq-card-body background-colors">
-                    <div class="color-swatch nq-bg-blue">
-                        Text on colored background is white.
+                    <div class="nq-card-body background-colors">
+                        <div class="color-swatch nq-bg-blue">
+                            Text on colored background is white.
+                        </div>
+
+                        <div class="color-swatch nq-bg-light-blue">
+                            Text on colored background is white.
+                        </div>
+
+                        <div class="color-swatch nq-bg-gold">
+                            Text on colored background is white.
+                        </div>
+
+                        <div class="color-swatch nq-bg-green">
+                            Text on colored background is white.
+                        </div>
+
+                        <div class="color-swatch nq-bg-orange">
+                            Text on colored background is white.
+                        </div>
+
+                        <div class="color-swatch nq-bg-red">
+                            Text on colored background is white.
+                        </div>
                     </div>
 
-                    <div class="color-swatch nq-bg-light-blue">
-                        Text on colored background is white.
-                    </div>
-
-                    <div class="color-swatch nq-bg-gold">
-                        Text on colored background is white.
-                    </div>
-
-                    <div class="color-swatch nq-bg-green">
-                        Text on colored background is white.
-                    </div>
-
-                    <div class="color-swatch nq-bg-orange">
-                        Text on colored background is white.
-                    </div>
-
-                    <div class="color-swatch nq-bg-red">
-                        Text on colored background is white.
-                    </div>
-                </div>
-
-                <div class="code">&lt;div class="<b>nq-bg-blue</b>">Nimiq Blue&lt;/div>
+                    <div class="code">&lt;div class="<b>nq-bg-blue</b>">Nimiq Blue&lt;/div>
 &lt;div class="<b>nq-bg-light-blue</b>">Nimiq Light Blue&lt;/div>
 &lt;div class="<b>nq-bg-gold</b>">Nimiq Gold&lt;/div>
 &lt;div class="<b>nq-bg-green</b>">Nimiq Green&lt;/div>
 &lt;div class="<b>nq-bg-orange</b>">Nimiq Orange&lt;/div>
 &lt;div class="<b>nq-bg-red</b>">Nimiq Red&lt;/div></div>
-            </div>
-
-            <div class="nq-card" id="primary-buttons">
-                <div class="nq-card-header">
-                    <h1 class="nq-h1">Primary Buttons</h1>
-                </div>
-                <div class="nq-card-body primary-buttons">
-                    <button class="nq-button">Regular button</button>
-                    <button class="nq-button wider">Wider button</button>
-                    <button class="nq-button full-width">Full-width button</button>
                 </div>
 
-                <div class="code">&lt;button class="<b>nq-button</b>">Regular button&lt;/button>
-&lt;button class="<b>nq-button wider</b>">Wider button&lt;/button>
-&lt;button class="<b>nq-button full-width</b>">Full-width button&lt;/button></div>
+                <div class="nq-card" id="primary-buttons">
+                    <div class="nq-card-header">
+                        <h1 class="nq-h1">Primary Buttons</h1>
+                    </div>
+                    <div class="nq-card-body primary-buttons">
+                        <button class="nq-button">Min width</button>
+                        <button class="nq-button">Regular button</button>
+                        <button class="nq-button">Button with lots of text</button>
+                    </div>
 
-                <div class="nq-card-body primary-buttons">
-                    <button class="nq-button light-blue">Light-blue button</button>
-                    <button class="nq-button green">Green button</button>
-                    <button class="nq-button orange">Orange button</button>
-                    <button class="nq-button red">Red button</button>
-                </div>
+                    <div class="code">&lt;button class="<b>nq-button</b>">Min width&lt;/button>
+&lt;button class="<b>nq-button</b>">Regular button&lt;/button>
+&lt;button class="<b>nq-button</b>">Button with lots of text&lt;/button></div>
 
-                <div class="code">&lt;button class="<b>nq-button light-blue</b>">Light-blue button&lt;/button>
+                    <div class="nq-card-body primary-buttons">
+                        <button class="nq-button light-blue">Light-blue button</button>
+                        <button class="nq-button green">Green button</button>
+                        <button class="nq-button orange">Orange button</button>
+                        <button class="nq-button red">Red button</button>
+                    </div>
+
+                    <div class="code">&lt;button class="<b>nq-button light-blue</b>">Light-blue button&lt;/button>
 &lt;button class="<b>nq-button green</b>">Green button&lt;/button>
 &lt;button class="<b>nq-button orange</b>">Orange button&lt;/button>
 &lt;button class="<b>nq-button red</b>">Red button&lt;/button></div>
-            </div>
-
-            <div class="nq-card" id="small-buttons">
-                <div class="nq-card-header">
-                    <h1 class="nq-h1">Small Buttons</h1>
-                </div>
-                <div class="nq-card-body small-buttons">
-                    <button class="nq-button-s">Small button</button><br>
-                    <br>
-                    <br>
-                    <button class="nq-button-s light-blue">Light-blue button</button>
-                    <button class="nq-button-s green">Green button</button>
-                    <button class="nq-button-s orange">Orange button</button>
-                    <button class="nq-button-s red">Red button</button>
                 </div>
 
-                <div class="code">&lt;button class="<b>nq-button-s</b>">Small button&lt;/button>
+                <div class="nq-card" id="small-buttons">
+                    <div class="nq-card-header">
+                        <h1 class="nq-h1">Small Buttons</h1>
+                    </div>
+                    <div class="nq-card-body small-buttons">
+                        <button class="nq-button-s">Small button</button><br>
+                        <br>
+                        <br>
+                        <button class="nq-button-s light-blue">Light-blue button</button>
+                        <button class="nq-button-s green">Green button</button>
+                        <button class="nq-button-s orange">Orange button</button>
+                        <button class="nq-button-s red">Red button</button>
+                    </div>
+
+                    <div class="code">&lt;button class="<b>nq-button-s</b>">Small button&lt;/button>
 
 &lt;button class="<b>nq-button-s light-blue</b>">Light-blue button&lt;/button>
 &lt;button class="<b>nq-button-s green</b>">Green button&lt;/button>
 &lt;button class="<b>nq-button-s orange</b>">Orange button&lt;/button>
 &lt;button class="<b>nq-button-s red</b>">Red button&lt;/button></div>
+                </div><!-- .nq-card -->
+            </div><!-- #cards -->
+
+            <div id="footer">
+                <a class="nq-link" href="#top">Go up</a>
             </div>
-        </div>
+        </div><!-- #content-->
     </body>
 </html>
