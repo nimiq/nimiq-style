@@ -2,6 +2,7 @@ html,
 body {
     box-sizing: border-box;
     -webkit-overflow-scrolling: touch;
+    min-width: 300px;
 }
 
 *, *:before, *:after {
@@ -35,12 +36,17 @@ body {
 /* Components */
 
 .nq-card {
-    width: calc(100% - 4rem);
     max-width: 75rem;
     background: #fafafa;
     border-radius: 1rem;
     box-shadow: 0 0.5rem 3.5rem rgba(0, 0, 0, 0.111158);
-    margin: 5rem auto;
+    margin: 2rem;
+}
+
+@media (max-width: 450px) {
+    .nq-card {
+        margin: 2rem 1rem;
+    }
 }
 
 .nq-card-header {
@@ -59,6 +65,12 @@ body {
 
 .nq-card-body {
     padding: 4rem;
+}
+
+@media (max-width: 450px) {
+    .nq-card-body {
+        padding: 3rem;
+    }
 }
 
 .nq-card-body *:first-child {
