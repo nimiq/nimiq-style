@@ -58,7 +58,14 @@ body {
     border-top-right-radius: 1rem;
 }
 
-.nq-card-header .nq-h1 {
+@media (max-width: 450px) {
+    .nq-card-header {
+        padding: 3.5rem;
+    }
+}
+
+.nq-card-header .nq-h1,
+.nq-card-header .nq-h2 {
     margin: 0;
     line-height: 1;
 }
@@ -79,6 +86,20 @@ body {
 
 .nq-card-body *:last-child {
     margin-bottom: 0;
+}
+
+.nq-card-footer {
+    padding: 4rem;
+    background: white;
+    border-top: 1px solid rgba(31, 35, 72, 0.07);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+@media (max-width: 450px) {
+    .nq-card-footer {
+        padding: 3rem;
+    }
 }
 
 
