@@ -89,7 +89,7 @@ body {
 }
 
 .nq-card-footer {
-    padding: 4rem;
+    padding: 3.5rem 4rem;
     background: white;
     border-top: 1px solid rgba(31, 35, 72, 0.07);
     border-bottom-left-radius: 1rem;
@@ -98,7 +98,7 @@ body {
 
 @media (max-width: 450px) {
     .nq-card-footer {
-        padding: 3rem;
+        padding: 2.5rem 3rem;
     }
 }
 
