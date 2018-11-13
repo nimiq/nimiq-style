@@ -10,7 +10,8 @@
   "author": "Nimiq Network Ltd.",
   "license": "MIT",
   "files": [
-    "nimiq-style.min.css"
+    "nimiq-style.min.css",
+    "nimiq-style-icons.min.css"
   ],
   "scripts": {
     "build": "cleancss -o nimiq-style.min.css src/main.css && cleancss -o nimiq-style-icons.min.css src/icons.css"
