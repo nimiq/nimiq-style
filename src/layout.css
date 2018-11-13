@@ -80,11 +80,11 @@ body {
     }
 }
 
-.nq-card-body *:first-child {
+.nq-card-body > *:first-child {
     margin-top: 0;
 }
 
-.nq-card-body *:last-child {
+.nq-card-body > *:last-child {
     margin-bottom: 0;
 }
 
