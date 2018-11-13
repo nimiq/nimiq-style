@@ -29,10 +29,21 @@
     font-family: inherit;
 }
 
+.nq-button[disabled] {
+    opacity: 0.4;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
 .nq-button:hover,
 .nq-button:active {
     transform: translateY(0.25rem);
     box-shadow: none;
+}
+
+.nq-button[disabled]:hover,
+.nq-button[disabled]:active {
+    transform: none;
 }
 
 .nq-button-s {
@@ -54,6 +65,11 @@
     font-family: inherit;
 }
 
+.nq-button-s[disabled] {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
 .nq-button-s::after {
     content: '';
     display: block;
@@ -67,6 +83,10 @@
 .nq-button-s:hover,
 .nq-button-s:active {
     background-color: rgba(31, 35, 72, 0.12); /* Based on Nimiq Blue */
+}
+
+.nq-button-s[disabled]:hover {
+    background-color: rgba(31, 35, 72, 0.07); /* Based on Nimiq Blue */
 }
 
 /* Color variations */
@@ -87,6 +107,10 @@
     background-color: rgba(5, 130, 202, 0.12); /* Based on Nimiq Light Blue */
 }
 
+.nq-button-s.light-blue[disabled]:hover {
+    background-color: rgba(5, 130, 202, 0.12); /* Based on Nimiq Light Blue */
+}
+
 /* green */
 .nq-button.green {
     background: var(--nimiq-green);
@@ -100,6 +124,10 @@
 
 .nq-button-s.green:hover,
 .nq-button-s.green:active {
+    background-color: rgba(33, 188, 165, 0.12); /* Based on Nimiq Green */
+}
+
+.nq-button-s.green[disabled]:hover {
     background-color: rgba(33, 188, 165, 0.12); /* Based on Nimiq Green */
 }
 
@@ -119,6 +147,10 @@
     background-color: rgba(252, 135, 2, 0.12); /* Based on Nimiq Orange */
 }
 
+.nq-button-s.orange[disabled]:hover {
+    background-color: rgba(252, 135, 2, 0.12); /* Based on Nimiq Orange */
+}
+
 /* red */
 .nq-button.red {
     background: var(--nimiq-red);
@@ -132,6 +164,10 @@
 
 .nq-button-s.red:hover,
 .nq-button-s.red:active {
+    background-color: rgba(216, 65, 51, 0.12); /* Based on Nimiq Red */
+}
+
+.nq-button-s.red[disabled]:hover {
     background-color: rgba(216, 65, 51, 0.12); /* Based on Nimiq Red */
 }
 
