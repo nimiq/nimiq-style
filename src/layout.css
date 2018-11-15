@@ -37,7 +37,7 @@ body {
 
 .nq-card {
     max-width: 75rem;
-    background: var(--nimiq-light-gray);
+    background: var(--nimiq-card-bg);
     border-radius: 1rem;
     box-shadow: 0 0.5rem 3.5rem rgba(0, 0, 0, 0.111158);
     margin: 2rem;
@@ -90,7 +90,7 @@ body {
 
 .nq-card-footer {
     padding: 3.5rem 4rem;
-    background: var(--nimiq-card-header-bg);
+    background: var(--nimiq-card-footer-bg);
     border-top: 1px solid var(--nimiq-card-border-color);
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
