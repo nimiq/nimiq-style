@@ -20,7 +20,8 @@
     margin: 2rem auto;
     box-shadow: 0 0.5rem 1.75rem rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    transition: transform 150ms, box-shadow 150ms;
+    transition: transform 150ms, box-shadow 150ms, opacity 150ms;
+    will-change: transform, box-shadow, opacity;
     text-decoration: none;
     display: block;
     text-align: center;
@@ -61,7 +62,8 @@
     background-color: rgba(31, 35, 72, 0.07); /* Based on Nimiq Blue */
     color: var(--nimiq-blue);
     border-radius: 1.6875rem;
-    transition: color 150ms, background-color 150ms;
+    transition: background-color 150ms;
+    will-change: background-color;
     border: none;
     cursor: pointer;
     position: relative;
