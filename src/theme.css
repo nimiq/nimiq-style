@@ -7,6 +7,7 @@ html {
     --nimiq-orange:     #FC8702;
     --nimiq-red:        #D94432;
     --nimiq-gray:       #F4F4F5;
+    --nimiq-light-gray: #FAFAFA;
 
     --nimiq-blue-bg:       radial-gradient(ellipse at 100% 100%, #260133, var(--nimiq-blue));
     --nimiq-light-blue-bg: radial-gradient(ellipse at 100% 100%, #265DD7, var(--nimiq-light-blue));
@@ -15,6 +16,11 @@ html {
     --nimiq-orange-bg:     radial-gradient(ellipse at 100% 100%, #FD6216, var(--nimiq-orange));
     --nimiq-red-bg:        radial-gradient(ellipse at 100% 100%, #CC3047, var(--nimiq-red));
     --nimiq-gray-bg:       radial-gradient(ellipse at 100% 100%, #F4F4F4, var(--nimiq-gray));
+
+    --nimiq-card-bg: var(--nimiq-light-gray);
+    --nimiq-card-header-bg: white;
+    --nimiq-card-footer-bg: white;
+    --nimiq-card-border-color: rgba(31, 35, 72, 0.07);
 }
 
 body {

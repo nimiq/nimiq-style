@@ -37,7 +37,7 @@ body {
 
 .nq-card {
     max-width: 75rem;
-    background: #fafafa;
+    background: var(--nimiq-light-gray);
     border-radius: 1rem;
     box-shadow: 0 0.5rem 3.5rem rgba(0, 0, 0, 0.111158);
     margin: 2rem;
@@ -51,8 +51,8 @@ body {
 
 .nq-card-header {
     padding: 4.5rem;
-    background: white;
-    border-bottom: 1px solid rgba(31, 35, 72, 0.07);
+    background: var(--nimiq-card-header-bg);
+    border-bottom: 1px solid var(--nimiq-card-border-color);
     text-align: center;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -90,8 +90,8 @@ body {
 
 .nq-card-footer {
     padding: 3.5rem 4rem;
-    background: white;
-    border-top: 1px solid rgba(31, 35, 72, 0.07);
+    background: var(--nimiq-card-header-bg);
+    border-top: 1px solid var(--nimiq-card-border-color);
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
