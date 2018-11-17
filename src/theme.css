@@ -1,11 +1,11 @@
 html {
     /* Nimiq color palette */
-    --nimiq-blue:       #1F2348;
-    --nimiq-light-blue: #0582CA;
-    --nimiq-gold:       #E9B213;
-    --nimiq-green:      #21BCA5;
-    --nimiq-orange:     #FC8702;
-    --nimiq-red:        #D94432;
+    --nimiq-blue:       #1F2348; /* rgb(31, 35, 72) */
+    --nimiq-light-blue: #0582CA; /* rgb(5, 130, 202) */
+    --nimiq-gold:       #E9B213; /* rgb(233, 178, 19) */
+    --nimiq-green:      #21BCA5; /* rgb(33, 188, 165) */
+    --nimiq-orange:     #FC8702; /* rgb(252, 135, 2) */
+    --nimiq-red:        #D94432; /* rgb(216, 65, 51) */
     --nimiq-gray:       #F4F4F5;
     --nimiq-light-gray: #FAFAFA;
 
