@@ -60,6 +60,15 @@ body {
     text-decoration: none;
 }
 
+.nq-bg-blue .nq-link,
+.nq-bg-light-blue .nq-link,
+.nq-bg-gold .nq-link,
+.nq-bg-green .nq-link,
+.nq-bg-orange .nq-link,
+.nq-bg-red .nq-link {
+    color: white;
+}
+
 .nq-link:active,
 .nq-link:hover {
     text-decoration: underline;
