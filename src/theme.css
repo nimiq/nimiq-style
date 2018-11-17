@@ -17,15 +17,17 @@ html {
     --nimiq-red-bg:        radial-gradient(ellipse at 100% 100%, #CC3047, var(--nimiq-red));
     --nimiq-gray-bg:       radial-gradient(ellipse at 100% 100%, #F4F4F4, var(--nimiq-gray));
 
+    /* Special colors */
+    --nimiq-border-color: rgba(31, 35, 72, 0.1); /* Based on Nimiq Blue */
     --nimiq-card-bg: var(--nimiq-light-gray);
     --nimiq-card-header-bg: white;
     --nimiq-card-footer-bg: white;
-    --nimiq-card-border-color: rgba(31, 35, 72, 0.07);
+    --nimiq-card-border-color: rgba(31, 35, 72, 0.07); /* Based on Nimiq Blue */
 }
 
 body {
     color: var(--nimiq-blue);
-    background: #F4F4F5;
+    background: var(--nimiq-gray);
     background-image: var(--nimiq-gray-bg);
     margin: 0;
 }
