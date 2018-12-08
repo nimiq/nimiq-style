@@ -12,28 +12,32 @@ body {
     font-size: 2.25rem; /* 18px */
 }
 
-.nq-h1 {
+.nq-h1,
+.nq-style h1 {
     font-size: 3rem;
     line-height: 1.2;
     font-weight: bold;
     margin: 3rem 0;
 }
 
-.nq-h2 {
+.nq-h2,
+.nq-style h2 {
     font-size: 2.5rem;
     line-height: 1.2;
     font-weight: bold;
     margin: 2.5rem 0;
 }
 
-.nq-h3 {
+.nq-h3,
+.nq-style h3 {
     font-size: 2rem;
     line-height: 1.2;
     font-weight: bold;
     margin: 2rem 0;
 }
 
-.nq-text {
+.nq-text,
+.nq-style p {
     font-size: 2rem;
     line-height: 1.3125;
     opacity: 0.7;
@@ -57,7 +61,9 @@ body {
     opacity: 0.7;
 }
 
-.nq-link {
+.nq-link,
+.nq-text a,
+.nq-style a {
     color: var(--nimiq-light-blue);
     text-decoration: none;
 }
@@ -76,10 +82,14 @@ body {
     text-decoration: underline;
 }
 
-.nq-list {
+.nq-list,
+.nq-style ul,
+.nq-style ol {
     font-size: 2rem;
+    margin: 2rem 0;
 }
 
-.nq-list li {
-    line-height: 1.6;
+.nq-list li,
+.nq-style li {
+    margin: 0.5rem 0;
 }
