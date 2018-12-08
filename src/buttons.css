@@ -117,7 +117,7 @@
 }
 
 .nq-button-s.light-blue[disabled]:hover {
-    background-color: rgba(5, 130, 202, 0.12); /* Based on Nimiq Light Blue */
+    background-color: rgba(5, 130, 202, 0.07); /* Based on Nimiq Light Blue */
 }
 
 /* green */
@@ -141,7 +141,7 @@
 }
 
 .nq-button-s.green[disabled]:hover {
-    background-color: rgba(33, 188, 165, 0.12); /* Based on Nimiq Green */
+    background-color: rgba(33, 188, 165, 0.07); /* Based on Nimiq Green */
 }
 
 /* orange */
@@ -165,7 +165,7 @@
 }
 
 .nq-button-s.orange[disabled]:hover {
-    background-color: rgba(252, 135, 2, 0.12); /* Based on Nimiq Orange */
+    background-color: rgba(252, 135, 2, 0.07); /* Based on Nimiq Orange */
 }
 
 /* red */
@@ -189,5 +189,5 @@
 }
 
 .nq-button-s.red[disabled]:hover {
-    background-color: rgba(216, 65, 51, 0.12); /* Based on Nimiq Red */
+    background-color: rgba(216, 65, 51, 0.07); /* Based on Nimiq Red */
 }
