@@ -2,38 +2,41 @@
 
 The Nimiq CSS framework, defining UI look and feel: colors, fonts, sizes.
 
-**Please refer to the [demo page](demo.html)**
-for examples and in-depth explanations of available UI components, how they look like, and how to use them.
-
-## Add Nimiq Style to your project
+**Please refer to the [demo page](demo.html)** for examples and in-depth
+explanations of available UI components, what they look like, and how to use them.
 
 The style framework consists of two parts, the CSS definitions and
-the fonts, available via Google Fonts.
+[the fonts](#use-the-official-fonts) (available via Google Fonts).
 
-### Add the CSS
+## Add Nimiq Style CSS to your project
 
-#### Via NPM
+### From NPM
+
 ```bash
 yarn add @nimiq/style
-// or
+# or
 npm install @nimiq/style
 ```
 
-And then import the style into your CSS file:
+Then import the style into your CSS or module files:
 
 ```css
 @import 'node_modules/@nimiq/style/nimiq-style.min.css';
+/* If you need the icons: */
+@import 'node_modules/@nimiq/style/nimiq-style-icons.min.css';
 ```
 
-#### Via a CDN
+### From a CDN
 
-Link to the CSS directly in your HTML:
+You can also link to the Nimiq Style CSS directly in your HTML:
 
 ```html
 <link href="https://cdn.jsdelivr.net/npm/@nimiq/style@v0/nimiq-style.min.css" rel="stylesheet">
+<!-- If you need the icons: -->
+<link href="https://cdn.jsdelivr.net/npm/@nimiq/style@v0/nimiq-style-icons.min.css" rel="stylesheet">
 ```
 
-## Add the Official Fonts
+## Use the official fonts
 
 To use Nimiq's main font "Muli", include it from Google Fonts:
 
@@ -41,7 +44,7 @@ To use Nimiq's main font "Muli", include it from Google Fonts:
 <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700" rel="stylesheet">
 ```
 
-The Nimiq style uses the monospace font "Fira Mono" to display account numbers.
+Nimiq also uses the monospace font "Fira Mono" to display account numbers.
 Include the required subset from Google Fonts:
 
 ```html
