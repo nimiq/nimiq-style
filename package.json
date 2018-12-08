@@ -1,6 +1,6 @@
 {
   "name": "@nimiq/style",
-  "version": "0.3.4",
+  "version": "0.4.0",
   "description": "The Nimiq style framework.",
   "repository": {
     "type": "git",
