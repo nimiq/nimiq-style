@@ -30,6 +30,19 @@
                 font-size: 2.25rem;
             }
 
+            .nq-card-header h1 a {
+                text-decoration: none;
+                color: inherit;
+                position: relative;
+            }
+
+            .nq-card-header h1 a:hover::before {
+                content: '#';
+                position: absolute;
+                left: -1em;
+                opacity: 0.6;
+            }
+
             #contents,
             #installation,
             #cards,
@@ -165,7 +178,7 @@
             <div id="cards">
                 <div class="nq-card" id="typography">
                     <div class="nq-card-header">
-                        <h1 class="nq-h1">Typography</h1>
+                        <h1 class="nq-h1"><a href="#typography">Typography</a></h1>
                     </div>
                     <div class="nq-card-body typography">
                         <h1 class="nq-h1">Heading H1</h1>
@@ -198,7 +211,7 @@
 
                 <div class="nq-card" id="colors">
                     <div class="nq-card-header">
-                        <h1 class="nq-h1">Colors</h1>
+                        <h1 class="nq-h1"><a href="#colors">Colors</a></h1>
                     </div>
                     <div class="nq-card-body text-colors">
                         <p class="nq-blue">Nimiq Blue</p>
@@ -252,7 +265,7 @@
 
                 <div class="nq-card" id="primary-buttons">
                     <div class="nq-card-header">
-                        <h1 class="nq-h1">Primary Buttons</h1>
+                        <h1 class="nq-h1"><a href="#primary-buttons">Primary Buttons</a></h1>
                     </div>
                     <div class="nq-card-body primary-buttons">
                         <button class="nq-button">Min width</button>
@@ -283,7 +296,7 @@
 
                 <div class="nq-card" id="small-buttons">
                     <div class="nq-card-header">
-                        <h1 class="nq-h1">Small Buttons</h1>
+                        <h1 class="nq-h1"><a href="#small-buttons">Small Buttons</a></h1>
                     </div>
                     <div class="nq-card-body small-buttons">
                         <button class="nq-button-s">Small button</button>
@@ -307,7 +320,7 @@
 
                 <div class="nq-card" id="card-component">
                     <div class="nq-card-header">
-                        <h1 class="nq-h1">Card Component</h1>
+                        <h1 class="nq-h1"><a href="#card-component">Card Component</a></h1>
                     </div>
                     <div class="nq-card-body">
                         <div class="nq-card">
@@ -356,7 +369,7 @@
 
                 <div class="nq-card" id="icons">
                     <div class="nq-card-header">
-                        <h1 class="nq-h1">Icons</h1>
+                        <h1 class="nq-h1"><a href="#icons">Icons</a></h1>
                     </div>
                     <div class="nq-card-body">
                         <p class="nq-text">To use icons, you have to include a second CSS file:</p>
