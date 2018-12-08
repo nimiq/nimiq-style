@@ -9,16 +9,16 @@
         <link rel="stylesheet" href="./src/main.css">
         <link rel="stylesheet" href="./src/icons.css">
         <style>
+            header {
+                text-align: center;
+                padding: 5rem 0 7rem;
+                margin-bottom: 5rem;
+            }
+
             .content {
                 width: 100%;
                 max-width: 900px;
                 margin: auto;
-            }
-
-            header {
-                text-align: center;
-                padding: 5rem 0;
-                margin-bottom: 5rem;
             }
 
             .links {
@@ -115,14 +115,13 @@
         </style>
     </head>
     <body>
+        <header id="top" class="nq-blue-bg">
+            <h1 class="nq-h1">Nimiq Style</h1>
+            <p class="nq-label">The Nimiq CSS framework</p>
+        </header>
         <div class="content">
-            <header id="top" class="nq-bg-light-blue">
-                <h1 class="nq-h1">Nimiq Style</h1>
-                <p class="nq-label">The Nimiq CSS framework</p>
-            </header>
-
             <div class="links">
-                <p class="nq-text-s">
+                <p class="nq-text">
                     <a class="nq-link" href="https://github.com/nimiq/nimiq-style">Github</a> |
                     <a class="nq-link" href="https://nimiq.com/styleguide">Styleguide</a>
                     (<a class="nq-link" href="https://nimiq.com/styleguide/styleguide.pdf">mobile</a>)
@@ -169,7 +168,7 @@
                         <h2 class="nq-h2">Heading H2</h2>
                         <h3 class="nq-h3">Heading H3</h3>
 
-                        <p class="nq-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <p class="nq-text">Paragraph: Nimiq is the blockchain designed for simplicity. Nimiq aims to be the best performing and easiest-to-use decentralized payment protocol & ecosystem. The project is striving to combine state-of-the-art blockchain research and web technology. Nano clients synchronize in seconds. Nimiq is browser-based and installation-free.</p>
 
                         <a class="nq-link" href="#">I am a link</a>
 
@@ -208,37 +207,37 @@
 &lt;p class="<b>nq-red</b>">Nimiq Red&lt;/p></div>
 
                     <div class="nq-card-body background-colors">
-                        <div class="color-swatch nq-bg-blue">
+                        <div class="color-swatch nq-blue-bg">
                             Text on colored background is white.
                         </div>
 
-                        <div class="color-swatch nq-bg-light-blue">
+                        <div class="color-swatch nq-light-blue-bg">
                             Text on colored background is white.
                         </div>
 
-                        <div class="color-swatch nq-bg-gold">
+                        <div class="color-swatch nq-gold-bg">
                             Text on colored background is white.
                         </div>
 
-                        <div class="color-swatch nq-bg-green">
+                        <div class="color-swatch nq-green-bg">
                             Text on colored background is white.
                         </div>
 
-                        <div class="color-swatch nq-bg-orange">
+                        <div class="color-swatch nq-orange-bg">
                             Text on colored background is white.
                         </div>
 
-                        <div class="color-swatch nq-bg-red">
+                        <div class="color-swatch nq-red-bg">
                             Text on colored background is white.
                         </div>
                     </div>
 
-                    <div class="code">&lt;div class="<b>nq-bg-blue</b>">Nimiq Blue&lt;/div>
-&lt;div class="<b>nq-bg-light-blue</b>">Nimiq Light Blue&lt;/div>
-&lt;div class="<b>nq-bg-gold</b>">Nimiq Gold&lt;/div>
-&lt;div class="<b>nq-bg-green</b>">Nimiq Green&lt;/div>
-&lt;div class="<b>nq-bg-orange</b>">Nimiq Orange&lt;/div>
-&lt;div class="<b>nq-bg-red</b>">Nimiq Red&lt;/div></div>
+                    <div class="code">&lt;div class="<b>nq-blue-bg</b>">Nimiq Blue&lt;/div>
+&lt;div class="<b>nq-light-blue-bg</b>">Nimiq Light Blue&lt;/div>
+&lt;div class="<b>nq-gold-bg</b>">Nimiq Gold&lt;/div>
+&lt;div class="<b>nq-green-bg</b>">Nimiq Green&lt;/div>
+&lt;div class="<b>nq-orange-bg</b>">Nimiq Orange&lt;/div>
+&lt;div class="<b>nq-red-bg</b>">Nimiq Red&lt;/div></div>
                 </div>
 
                 <div class="nq-card" id="primary-buttons">
@@ -377,7 +376,7 @@
                         <i class="nq-icon ledger"></i>
                     </div>
 
-                    <div class="nq-card-body nq-bg-blue icons">
+                    <div class="nq-card-body nq-blue-bg icons">
                         <i class="nq-icon eye"></i>
                         <i class="nq-icon eye-off"></i>
                         <i class="nq-icon cancel-circle-white"></i>

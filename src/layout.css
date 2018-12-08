@@ -51,9 +51,7 @@ body {
 }
 
 .nq-card-header {
-    padding: 4.5rem;
-    background: var(--nimiq-card-header-bg);
-    border-bottom: 1px solid var(--nimiq-card-border-color);
+    padding: 4rem;
     text-align: center;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -75,6 +73,10 @@ body {
     padding: 4rem;
 }
 
+.nq-card-header + .nq-card-body {
+    padding-top: 1rem;
+}
+
 @media (max-width: 450px) {
     .nq-card-body {
         padding: 3rem;
@@ -90,17 +92,13 @@ body {
 }
 
 .nq-card-footer {
-    padding: 3.5rem 4rem;
-    background: var(--nimiq-card-footer-bg);
-    border-top: 1px solid var(--nimiq-card-border-color);
+    padding: 1rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
 
-@media (max-width: 450px) {
-    .nq-card-footer {
-        padding: 2.5rem 3rem;
-    }
+.nq-card-body + .nq-card-footer {
+    padding-top: 0;
 }
 
 
