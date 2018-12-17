@@ -62,8 +62,8 @@
     background-color: rgba(31, 35, 72, 0.07); /* Based on Nimiq Blue */
     color: var(--nimiq-blue);
     border-radius: 1.6875rem;
-    transition: background-color 150ms;
-    will-change: background-color;
+    transition: color 300ms, background-color 300ms, transform 450ms;
+    will-change: color, background-color, transform;
     border: none;
     cursor: pointer;
     position: relative;
@@ -88,10 +88,19 @@
 .nq-button-s:hover,
 .nq-button-s:active {
     background-color: rgba(31, 35, 72, 0.12); /* Based on Nimiq Blue */
+    transform: scale(1.03);
 }
 
 .nq-button-s[disabled]:hover {
     background-color: rgba(31, 35, 72, 0.07); /* Based on Nimiq Blue */
+    transform: scale(1);
+}
+
+.nq-button-s:focus {
+    outline: none;
+    color: var(--nimiq-light-blue);
+    background-color: rgba(5, 130, 202, 0.1); /* Based on Nimiq Light Blue */
+    transform: scale(1.03);
 }
 
 /* Color variations */
