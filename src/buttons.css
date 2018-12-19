@@ -21,7 +21,7 @@
     box-shadow: 0 0.5rem 1.75rem rgba(0, 0, 0, 0.15);
     cursor: pointer;
     transition: transform 450ms ease, box-shadow 450ms ease, opacity 300ms ease;
-    will-change: transform, box-shadow, opacity;
+    will-change: box-shadow;
     text-decoration: none;
     display: block;
     text-align: center;
@@ -45,7 +45,7 @@
 .nq-button:hover,
 .nq-button:active {
     transform: scale(1.02) perspective(1px);
-    box-shadow: 0 0.5 3rem rgba(0,0,0,0.15);
+    box-shadow: 0 0.5rem 3rem rgba(0,0,0,0.15);
 }
 
 .nq-button:focus {
@@ -73,7 +73,7 @@
     color: var(--nimiq-blue);
     border-radius: 1.6875rem;
     transition: color 300ms ease, background-color 300ms ease, transform 450ms ease;
-    will-change: color, background-color, transform;
+    will-change: color, background-color;
     border: none;
     cursor: pointer;
     position: relative;
