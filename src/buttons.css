@@ -27,30 +27,13 @@
     text-align: center;
     font-family: inherit;
     overflow: hidden;
-}
-
-.nq-button::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background: var(--nimiq-blue);
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 300ms ease;
+    transform: perspective(1px);
+    backface-visibility: hidden;
 }
 
 .nq-button.inverse {
     background: white !important;
     color: var(--nimiq-blue);
-}
-
-.nq-button.inverse:hover::before,
-.nq-button.inverse:active::before,
-.nq-button.inverse:focus::before {
-    opacity: 0;
 }
 
 .nq-button[disabled] {
@@ -61,19 +44,13 @@
 
 .nq-button:hover,
 .nq-button:active {
-    transform: scale(1.02);
+    transform: scale(1.02) perspective(1px);
     box-shadow: 0 0.5 3rem rgba(0,0,0,0.15);
-}
-
-.nq-button:hover::before,
-.nq-button:active::before,
-.nq-button:focus::before {
-    opacity: 1;
 }
 
 .nq-button:focus {
     outline: none;
-    transform: scale(1.02) translate3D(0,1px,0);
+    transform: scale(1.02) translate3D(0,1px,0) perspective(1px);
     box-shadow: 0 0 0 rgba(0,0,0,0.15);
     transition: transform .2s ease, box-shadow .2s ease;
 }
@@ -101,6 +78,7 @@
     cursor: pointer;
     position: relative;
     font-family: inherit;
+    transform: perspective(1px);
 }
 
 .nq-button-s[disabled] {
@@ -121,7 +99,7 @@
 .nq-button-s:hover,
 .nq-button-s:active {
     background-color: rgba(31, 35, 72, 0.12); /* Based on Nimiq Blue */
-    transform: scale(1.03);
+    transform: scale(1.03) perspective(1px);
 }
 
 .nq-button-s[disabled]:hover {
@@ -133,7 +111,7 @@
     outline: none;
     color: var(--nimiq-light-blue);
     background-color: rgba(5, 130, 202, 0.1); /* Based on Nimiq Light Blue */
-    transform: scale(1.03);
+    transform: scale(1.03) perspective(1px);
 }
 
 /* Color variations */
@@ -144,26 +122,22 @@
     background-image: var(--nimiq-light-blue-bg);
 }
 
-.nq-button.light-blue::before {
-    background: var(--nimiq-light-blue);
-}
-
 .nq-button.light-blue.inverse {
     color: var(--nimiq-light-blue);
 }
 
 .nq-button-s.light-blue {
     color: var(--nimiq-light-blue);
-    background-color: rgba(5, 130, 202, 0.07); /* Based on Nimiq Light Blue */
+    background-color: rgba(5, 130, 202, 0.1); /* Based on Nimiq Light Blue */
 }
 
 .nq-button-s.light-blue:hover,
 .nq-button-s.light-blue:active {
-    background-color: rgba(5, 130, 202, 0.12); /* Based on Nimiq Light Blue */
+    background-color: rgba(5, 130, 202, 0.16); /* Based on Nimiq Light Blue */
 }
 
 .nq-button-s.light-blue[disabled]:hover {
-    background-color: rgba(5, 130, 202, 0.07); /* Based on Nimiq Light Blue */
+    background-color: rgba(5, 130, 202, 0.1); /* Based on Nimiq Light Blue */
 }
 
 /* green */
@@ -172,26 +146,22 @@
     background-image: var(--nimiq-green-bg);
 }
 
-.nq-button.green::before {
-    background: var(--nimiq-green);
-}
-
 .nq-button.green.inverse {
     color: var(--nimiq-green);
 }
 
 .nq-button-s.green {
     color: var(--nimiq-green);
-    background-color: rgba(33, 188, 165, 0.07); /* Based on Nimiq Green */
+    background-color: rgba(33, 188, 165, 0.1); /* Based on Nimiq Green */
 }
 
 .nq-button-s.green:hover,
 .nq-button-s.green:active {
-    background-color: rgba(33, 188, 165, 0.12); /* Based on Nimiq Green */
+    background-color: rgba(33, 188, 165, 0.16); /* Based on Nimiq Green */
 }
 
 .nq-button-s.green[disabled]:hover {
-    background-color: rgba(33, 188, 165, 0.07); /* Based on Nimiq Green */
+    background-color: rgba(33, 188, 165, 0.1); /* Based on Nimiq Green */
 }
 
 /* orange */
@@ -200,26 +170,22 @@
     background-image: var(--nimiq-orange-bg);
 }
 
-.nq-button.orange::before {
-    background: var(--nimiq-orange);
-}
-
 .nq-button.orange.inverse {
     color: var(--nimiq-orange);
 }
 
 .nq-button-s.orange {
     color: var(--nimiq-orange);
-    background-color: rgba(252, 135, 2, 0.07); /* Based on Nimiq Orange */
+    background-color: rgba(252, 135, 2, 0.1); /* Based on Nimiq Orange */
 }
 
 .nq-button-s.orange:hover,
 .nq-button-s.orange:active {
-    background-color: rgba(252, 135, 2, 0.12); /* Based on Nimiq Orange */
+    background-color: rgba(252, 135, 2, 0.16); /* Based on Nimiq Orange */
 }
 
 .nq-button-s.orange[disabled]:hover {
-    background-color: rgba(252, 135, 2, 0.07); /* Based on Nimiq Orange */
+    background-color: rgba(252, 135, 2, 0.1); /* Based on Nimiq Orange */
 }
 
 /* red */
@@ -228,24 +194,20 @@
     background-image: var(--nimiq-red-bg);
 }
 
-.nq-button.red::before {
-    background: var(--nimiq-red);
-}
-
 .nq-button.red.inverse {
     color: var(--nimiq-red);
 }
 
 .nq-button-s.red {
     color: var(--nimiq-red);
-    background-color: rgba(216, 65, 51, 0.07); /* Based on Nimiq Red */
+    background-color: rgba(216, 65, 51, 0.1); /* Based on Nimiq Red */
 }
 
 .nq-button-s.red:hover,
 .nq-button-s.red:active {
-    background-color: rgba(216, 65, 51, 0.12); /* Based on Nimiq Red */
+    background-color: rgba(216, 65, 51, 0.16); /* Based on Nimiq Red */
 }
 
 .nq-button-s.red[disabled]:hover {
-    background-color: rgba(216, 65, 51, 0.07); /* Based on Nimiq Red */
+    background-color: rgba(216, 65, 51, 0.1); /* Based on Nimiq Red */
 }
