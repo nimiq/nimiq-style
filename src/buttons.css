@@ -71,13 +71,12 @@
     background-color: rgba(31, 35, 72, 0.07); /* Based on Nimiq Blue */
     color: var(--nimiq-blue);
     border-radius: 1.6875rem;
-    transition: color 300ms ease, background-color 300ms ease, transform 450ms ease;
+    transition: color 300ms ease, background-color 300ms ease;
     will-change: color, background-color;
     border: none;
     cursor: pointer;
     position: relative;
     font-family: inherit;
-    transform: perspective(1px);
 }
 
 .nq-button-s[disabled] {
@@ -95,23 +94,20 @@
     bottom: -2rem;
 }
 
-.nq-button-s:hover,
-.nq-button-s:active {
+.nq-button-s:hover {
     background-color: rgba(31, 35, 72, 0.12); /* Based on Nimiq Blue */
-    transform: scale(1.03) perspective(1px);
 }
 
 .nq-button-s[disabled]:hover {
     background-color: rgba(31, 35, 72, 0.07); /* Based on Nimiq Blue */
-    transform: scale(1);
 }
 
 .nq-button-s:focus {
     outline: none;
     color: var(--nimiq-light-blue);
-    background-color: rgba(5, 130, 202, 0.1); /* Based on Nimiq Light Blue */
-    transform: scale(1.03) perspective(1px);
+    background-color: rgba(5, 130, 202, 0.16); /* Based on Nimiq Light Blue */
 }
+
 
 /* Color variations */
 
