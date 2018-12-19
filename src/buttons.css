@@ -28,7 +28,6 @@
     font-family: inherit;
     overflow: hidden;
     transform: perspective(1px);
-    backface-visibility: hidden;
 }
 
 .nq-button.inverse {
