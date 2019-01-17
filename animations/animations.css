@@ -126,7 +126,6 @@
 .fade-out, .move-left-out, .move-right-out, .shrink-out, .grow-out,
 .from-left-out, .from-right-out, .from-bottom-out {
     animation-direction: reverse;
-    display: none !important;
 }
 
 .shake, .fade-in, .fade-out, .move-left-in, .move-left-out, .move-right-in, .move-right-out,
