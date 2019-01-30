@@ -1,7 +1,7 @@
 :root {
     --primary-color: #536dfe; /* YML: #3A3EDD */
     --secondary-color: #a553fe; /* YML: #BF00F5 */
-    --main-button-background: #8600eb; /* YML: #724ceb */
+    --main-button-background: var(--nimiq-blue);
     --primary-background: linear-gradient(var(--primary-color), var(--secondary-color));
     --primary-background-toright: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
     --primary-background-progress: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--secondary-color));

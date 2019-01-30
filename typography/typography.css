@@ -50,7 +50,7 @@ a {
 }
 
 .nimiq-dark a {
-    color: #3b3b3b;
+    color: unset;
 }
 
 p a {
