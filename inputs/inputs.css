@@ -86,6 +86,10 @@ button.secondary,
     border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
+.nimiq-dark button.green {
+    background: var(--nimiq-green);
+}
+
 /* Text Inputs */
 
 input[type="text"],
