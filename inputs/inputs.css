@@ -18,7 +18,7 @@ button,
     vertical-align: middle;
     display: table-cell;
     text-align: center;
-    background: white;
+    background-color: white;
     color: var(--primary-color);
     cursor: pointer;
     user-select: none;
@@ -34,7 +34,7 @@ button,
 
 button[disabled],
 [button][disabled] {
-    background: transparent;
+    background-color: transparent;
     box-shadow: none;
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.31);
@@ -58,14 +58,14 @@ button.small.fixed-size,
 
 button.secondary,
 [button].secondary {
-    background: transparent;
+    background-color: transparent;
     color: white;
     box-shadow: none;
 }
 
 .nimiq-dark button,
 .nimiq-dark [button] {
-    background: var(--main-button-background);
+    background-color: var(--main-button-background);
     border: 1px solid transparent;
     color: white;
     letter-spacing: 0.16em;
@@ -74,20 +74,20 @@ button.secondary,
 
 .nimiq-dark button.secondary,
 .nimiq-dark [button].secondary {
-    background: transparent;
+    background-color: transparent;
     color: #3b3b3b;
     border: 1px solid #3b3b3b;
 }
 
 .nimiq-dark button[disabled],
 .nimiq-dark [button][disabled] {
-    background: transparent;
+    background-color: transparent;
     color: rgba(0, 0, 0, 0.48);
     border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .nimiq-dark button.green {
-    background: var(--nimiq-green);
+    background-color: var(--nimiq-green);
 }
 
 /* Text Inputs */
@@ -97,7 +97,7 @@ input.password,
 input[type="number"] {
     border: none;
     outline: none;
-    background: transparent;
+    background-color: transparent;
     color: white;
     width: 168px;
     text-align: center;
@@ -203,14 +203,14 @@ input[type=range] {
 
 input[type=range]::-webkit-slider-runnable-track {
     height: 5px;
-    background: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     border: none;
     border-radius: 3px;
 }
 
 input[type=range]::-moz-range-track {
     height: 5px;
-    background: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     border: none;
     border-radius: 3px;
 }
@@ -221,7 +221,7 @@ input[type=range]::-webkit-slider-thumb {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: var(--main-button-background);
+    background-color: var(--main-button-background);
     margin-top: -6px;
 }
 
@@ -230,7 +230,7 @@ input[type=range]::-moz-range-thumb {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: var(--main-button-background);
+    background-color: var(--main-button-background);
 }
 
 input[type=range]:focus {
@@ -238,18 +238,18 @@ input[type=range]:focus {
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
-    background: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 input[type=range]:focus::-moz-range-track {
-    background: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 input[type=range]::-ms-track {
     height: 5px;
 
     /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
-    background: transparent;
+    background-color: transparent;
 
     /*leave room for the larger thumb to overflow with a transparent border */
     border-color: transparent;
@@ -261,7 +261,7 @@ input[type=range]::-ms-track {
 
 input[type=range]::-ms-fill-lower,
 input[type=range]::-ms-fill-upper {
-    background: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
@@ -270,10 +270,10 @@ input[type=range]::-ms-thumb {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: var(--main-button-background);
+    background-color: var(--main-button-background);
 }
 
 input[type=range]:focus::-ms-fill-lower,
 input[type=range]:focus::-ms-fill-upper {
-    background: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
