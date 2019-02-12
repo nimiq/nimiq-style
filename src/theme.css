@@ -6,6 +6,10 @@ html {
     --nimiq-green:      #21BCA5; /* rgb(33, 188, 165) */
     --nimiq-orange:     #FC8702; /* rgb(252, 135, 2) */
     --nimiq-red:        #D94432; /* rgb(216, 65, 51) */
+    --nimiq-purple:     #5F4B8B; /* rgb(95, 75, 139) */
+    --nimiq-pink:       #FA7268; /* rgb(250, 114, 104) */
+    --nimiq-light-green:#88B04B; /* rgb(136, 176, 75) */
+    --nimiq-brown:      #795548; /* rgb(121, 85, 72) */
     --nimiq-gray:       #F4F4F4;
     --nimiq-light-gray: #FAFAFA;
 
@@ -16,6 +20,10 @@ html {
     --nimiq-green-bg:      radial-gradient(circle at bottom right, #41A38E, var(--nimiq-green));
     --nimiq-orange-bg:     radial-gradient(circle at bottom right, #FD6216, var(--nimiq-orange));
     --nimiq-red-bg:        radial-gradient(circle at bottom right, #CC3047, var(--nimiq-red));
+    --nimiq-purple-bg:     radial-gradient(circle at bottom right, #4D4C96, var(--nimiq-purple));
+    --nimiq-pink-bg:       radial-gradient(circle at bottom right, #E0516B, var(--nimiq-pink));
+    --nimiq-light-green-bg:radial-gradient(circle at bottom right, #70B069, var(--nimiq-light-green));
+    --nimiq-brown-bg:      radial-gradient(circle at bottom right, #724147, var(--nimiq-brown));
 
 
     /* Special colors */
@@ -53,12 +61,42 @@ body {
     color: var(--nimiq-red);
 }
 
+.nq-purple {
+    color: var(--nimiq-purple);
+}
+
+.nq-pink {
+    color: var(--nimiq-pink);
+}
+
+.nq-light-green {
+    color: var(--nimiq-light-green);
+}
+
+.nq-brown {
+    color: var(--nimiq-brown);
+}
+
 .nq-blue-bg,
 .nq-light-blue-bg,
 .nq-gold-bg,
 .nq-green-bg,
 .nq-orange-bg,
-.nq-red-bg {
+.nq-red-bg,
+.nq-purple-bg,
+.nq-pink-bg,
+.nq-light-green-bg,
+.nq-brown-bg,
+.nq-blue-bg .nq-link,
+.nq-light-blue-bg .nq-link,
+.nq-gold-bg .nq-link,
+.nq-green-bg .nq-link,
+.nq-orange-bg .nq-link,
+.nq-red-bg .nq-link,
+.nq-purple-bg .nq-link,
+.nq-pink-bg .nq-link,
+.nq-light-green-bg .nq-link,
+.nq-brown-bg .nq-link {
     color: white;
 }
 
@@ -90,6 +128,26 @@ body {
 .nq-red-bg {
     background: var(--nimiq-red);
     background-image: var(--nimiq-red-bg);
+}
+
+.nq-purple-bg {
+    background: var(--nimiq-purple);
+    background-image: var(--nimiq-purple-bg);
+}
+
+.nq-pink-bg {
+    background: var(--nimiq-pink);
+    background-image: var(--nimiq-pink-bg);
+}
+
+.nq-light-green-bg {
+    background: var(--nimiq-light-green);
+    background-image: var(--nimiq-light-green-bg);
+}
+
+.nq-brown-bg {
+    background: var(--nimiq-brown);
+    background-image: var(--nimiq-brown-bg);
 }
 
 .nq-gray-bg {
