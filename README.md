@@ -31,9 +31,9 @@ Then import the style into your CSS or module files:
 You can also link to the Nimiq Style CSS directly in your HTML:
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/@nimiq/style@v0/nimiq-style.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@nimiq/style@v0.4.2/nimiq-style.min.css" rel="stylesheet">
 <!-- If you need the icons: -->
-<link href="https://cdn.jsdelivr.net/npm/@nimiq/style@v0/nimiq-style-icons.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@nimiq/style@v0.4.2/nimiq-style-icons.min.css" rel="stylesheet">
 ```
 
 ## Use the official fonts
