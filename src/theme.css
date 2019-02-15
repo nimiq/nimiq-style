@@ -87,6 +87,7 @@ body {
 .nq-pink-bg,
 .nq-light-green-bg,
 .nq-brown-bg,
+
 .nq-blue-bg .nq-link,
 .nq-light-blue-bg .nq-link,
 .nq-gold-bg .nq-link,
@@ -99,6 +100,31 @@ body {
 .nq-brown-bg .nq-link {
     color: white;
 }
+
+.nq-blue-bg .nq-text,
+.nq-light-blue-bg .nq-text,
+.nq-gold-bg .nq-text,
+.nq-green-bg .nq-text,
+.nq-orange-bg .nq-text,
+.nq-red-bg .nq-text,
+.nq-purple-bg .nq-text,
+.nq-pink-bg .nq-text,
+.nq-light-green-bg .nq-text,
+.nq-brown-bg .nq-text,
+
+.nq-blue-bg .nq-label,
+.nq-light-blue-bg .nq-label,
+.nq-gold-bg .nq-label,
+.nq-green-bg .nq-label,
+.nq-orange-bg .nq-label,
+.nq-red-bg .nq-label,
+.nq-purple-bg .nq-label,
+.nq-pink-bg .nq-label,
+.nq-light-green-bg .nq-label,
+.nq-brown-bg .nq-label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
 
 .nq-blue-bg {
     background: var(--nimiq-blue);
