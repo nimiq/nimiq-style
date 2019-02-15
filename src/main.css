@@ -4,10 +4,10 @@ URL: https://github.com/nimiq/nimiq-style
 Styleguide: https://nimiq.com/styleguide
 */
 
-@import 'theme.css';
 @import 'typography.css';
 @import 'buttons.css';
 @import 'layout.css';
+@import 'theme.css';
 
 /* @import 'inputs.css'; */
 /* @import 'animations/animations.css'; */
