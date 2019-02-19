@@ -399,43 +399,20 @@
                     <div class="nq-card-header">
                         <h1 class="nq-h1"><a href="#icons">Icons</a></h1>
                     </div>
-                    <div class="nq-card-body">
-                        <p class="nq-text">To use icons, you have to include a second CSS file:</p>
-                    </div>
-                    <div class="code">@import 'node_modules/@nimiq/style/nimiq-style-icons.min.css';</div>
                     <div class="nq-card-body icons">
-                        <i class="nq-icon nimiq-logo"></i>
-                        <i class="nq-icon add-circle"></i>
-                        <i class="nq-icon walletfile"></i>
-                        <i class="nq-icon walletfile-locked"></i>
-                        <i class="nq-icon walletfile-locked-green"></i>
-                        <i class="nq-icon walletfile-unlocked"></i>
-                        <i class="nq-icon arrow-left"></i>
-                        <i class="nq-icon arrow-down"></i>
-                        <i class="nq-icon arrow-right"></i>
-                        <i class="nq-icon arrow-up"></i>
-                        <i class="nq-icon arrow-right-light-blue"></i>
-                        <i class="nq-icon chevron-left"></i>
-                        <i class="nq-icon chevron-right"></i>
-                        <i class="nq-icon arrow-long-right"></i>
-                        <i class="nq-icon edit"></i>
-                        <i class="nq-icon cancel-circle"></i>
-                        <i class="nq-icon privacy-agent"></i>
-                        <i class="nq-icon warning-sign"></i>
-                        <i class="nq-icon trumpet"></i>
-                        <i class="nq-icon keyguard"></i>
-                        <i class="nq-icon ledger"></i>
+                        <svg class="nq-icon"><use xlink:href="./src/icons.sprite.svg#lock-locked"/></svg>
+                        <svg class="nq-icon"><use xlink:href="./src/icons.sprite.svg#lock-unlocked"/></svg>
                     </div>
 
                     <div class="nq-card-body nq-blue-bg icons">
-                        <i class="nq-icon eye"></i>
-                        <i class="nq-icon eye-off"></i>
-                        <i class="nq-icon cancel-circle-white"></i>
-                        <i class="nq-icon checkmark-circle"></i>
-                        <i class="nq-icon lock-white"></i>
+                        <svg class="nq-icon"><use xlink:href="./src/icons.sprite.svg#lock-locked"/></svg>
+                        <svg class="nq-icon"><use xlink:href="./src/icons.sprite.svg#lock-unlocked"/></svg>
                     </div>
 
-                    <div class="code"></div>
+                    <div class="code">
+&lt;use xlink:href="./src/icons.sprite.svg#<b>lock-locked</b>"/>
+&lt;use xlink:href="./src/icons.sprite.svg#<b>lock-unlocked</b>"/>
+                    </div>
                 </div>
             </div><!-- #cards -->
 

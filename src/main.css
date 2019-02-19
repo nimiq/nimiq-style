@@ -1,5 +1,5 @@
 /*!
-Nimiq Style CSS Framework v0.4.0
+Nimiq Style CSS Framework v0.4.3
 URL: https://github.com/nimiq/nimiq-style
 Styleguide: https://nimiq.com/styleguide
 */
@@ -8,6 +8,7 @@ Styleguide: https://nimiq.com/styleguide
 @import 'buttons.css';
 @import 'layout.css';
 @import 'theme.css';
+@import 'icons.css';
 
 /* @import 'inputs.css'; */
 /* @import 'animations/animations.css'; */
