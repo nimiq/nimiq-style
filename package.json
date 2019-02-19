@@ -1,6 +1,6 @@
 {
   "name": "@nimiq/style",
-  "version": "0.4.3",
+  "version": "0.5.0",
   "description": "The Nimiq style framework.",
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
   ],
   "scripts": {
     "build:css": "cleancss -o nimiq-style.min.css src/main.css",
-    "build:svg": "svgstore -o nimiq-style.icons.svg src/icons/*.svg",
+    "build:svg": "svgstore -o nimiq-style.icons.svg --prefix nq- src/icons/*.svg",
     "build": "yarn build:css && yarn build:svg"
   },
   "devDependencies": {
