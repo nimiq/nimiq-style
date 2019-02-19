@@ -9,6 +9,75 @@
         <link rel="stylesheet" href="./src/main.css">
         <link rel="stylesheet" href="./src/icons.css">
         <style>
+            /*! Hint.css - v2.5.1 - 2018-11-17
+             * http://kushagragour.in/lab/hint/
+             * Copyright (c) 2018 Kushagra Gour */
+
+            /*-------------------------------------*\
+                HINT.css - A CSS tooltip library
+            \*-------------------------------------*/
+
+            /**
+             * HINT.css is a tooltip library made in pure CSS.
+             *
+             * Source: https://github.com/chinchang/hint.css
+             * Demo: http://kushagragour.in/lab/hint/
+             */
+
+            /**
+             * Adapted by Nimiq for simplicity
+             */
+
+            .hint {
+                position: relative;
+                display: inline-block; }
+            .hint:before, .hint:after {
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+                z-index: 1000000;
+                pointer-events: none;
+                bottom: 100%;
+                left: 50%; }
+            .hint:before {
+                content: '';
+                position: absolute;
+                background: transparent;
+                border: 6px solid transparent;
+                z-index: 1000001;
+                border-top-color: #383838;
+                margin-bottom: -11px;
+                left: calc(50% - 6px); }
+            .hint:after {
+                background: #383838;
+                color: white;
+                padding: 1rem 1.5rem;
+                font-size: 2.25rem;
+                font-weight: bold;
+                line-height: 2.5rem;
+                white-space: nowrap;
+                border-radius: 4px;
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                transform: translateX(-50%);
+                text-shadow: 0 -1px 0px black;
+                box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); }
+            .hint:hover:before, .hint:hover:after {
+                visibility: visible;
+                opacity: 1; }
+            .hint:hover:before {
+                -webkit-transform: translateY(-8px);
+                -moz-transform: translateY(-8px);
+                transform: translateY(-8px); }
+            .hint:hover:after {
+                -webkit-transform: translateX(-50%) translateY(-8px);
+                -moz-transform: translateX(-50%) translateY(-8px);
+                transform: translateX(-50%) translateY(-8px); }
+            .hint[aria-label]:after {
+                content: attr(aria-label); }
+
+            /* END of hint.css */
+
             header {
                 text-align: center;
                 padding: 5rem 0 7rem;
@@ -70,6 +139,11 @@
                 background: ivory;
                 color: dimgray;
                 overflow: auto;
+                border-top: solid 1px rgba(0, 0, 0, 0.06);
+            }
+
+            .code:not(:last-child) {
+                border-bottom: solid 1px rgba(0, 0, 0, 0.06);
             }
 
             .nq-card .code {
@@ -114,7 +188,16 @@
             }
 
             .icons .nq-icon {
-                margin: 1rem;
+                margin: 0.95rem;
+            }
+
+            .icons .nq-icon.ledger {
+                width: 24rem;
+            }
+
+            .icons:last-child {
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
             }
 
             @media (max-width: 450px) {
@@ -399,19 +482,87 @@
                     <div class="nq-card-header">
                         <h1 class="nq-h1"><a href="#icons">Icons</a></h1>
                     </div>
+
                     <div class="nq-card-body icons">
-                        <svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#lock-locked"/></svg>
-                        <svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#lock-unlocked"/></svg>
+                        <p class="nq-text">Hover over the icons to see their names. Then use them like this:</p>
+                    </div>
+                    <div class="code">&lt;svg class="<b>nq-icon</b>">
+    &lt;use xlink:href="./nimiq-style.icons.svg#<b>nq-icon-name</b>"/>
+&lt;/svg></div>
+                    <div class="nq-card-body icons">
+                        <div class="hint" aria-label="nq-arrow-left"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-arrow-left"/></svg></div>
+                        <div class="hint" aria-label="nq-arrow-right"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-arrow-right"/></svg></div>
+                        <div class="hint" aria-label="nq-arrow-right-small"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-arrow-right-small"/></svg></div>
+                        <div class="hint" aria-label="nq-caret-right-small"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-caret-right-small"/></svg></div>
+                        <div class="hint" aria-label="nq-checkmark"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-checkmark"/></svg></div>
+                        <div class="hint" aria-label="nq-download"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-download"/></svg></div>
+                        <div class="hint" aria-label="nq-transfer"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-transfer"/></svg></div>
+                        <div class="hint" aria-label="nq-questionmark"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-questionmark"/></svg></div>
+                        <br/>
+                        <div class="hint" aria-label="nq-close"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-close"/></svg></div>
+                        <div class="hint" aria-label="nq-info-circle"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-info-circle"/></svg></div>
+                        <div class="hint" aria-label="nq-plus-circle"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-plus-circle"/></svg></div>
+                        <div class="hint" aria-label="nq-face-neutral"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-face-neutral"/></svg></div>
+                        <div class="hint" aria-label="nq-face-sad"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-face-sad"/></svg></div>
+                        <div class="hint" aria-label="nq-login"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-login"/></svg></div>
+                        <br/>
+                        <div class="hint" aria-label="nq-lock-locked"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-lock-locked"/></svg></div>
+                        <div class="hint" aria-label="nq-lock-unlocked"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-lock-unlocked"/></svg></div>
+                        <div class="hint" aria-label="nq-contacts"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-contacts"/></svg></div>
+                        <div class="hint" aria-label="nq-fire"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-fire"/></svg></div>
+                        <div class="hint" aria-label="nq-skull"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-skull"/></svg></div>
+                        <div class="hint" aria-label="nq-view"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-view"/></svg></div>
+                        <div class="hint" aria-label="nq-view-off"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-view-off"/></svg></div>
+                        <div class="hint" aria-label="nq-hexagon"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-hexagon"/></svg></div>
+                        <br/>
+                        <div class="hint" aria-label="nq-keys"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-keys"/></svg></div>
+                        <div class="hint" aria-label="nq-browser-login"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-browser-login"/></svg></div>
+                        <div class="hint" aria-label="nq-copy"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-copy"/></svg></div>
+                        <div class="hint" aria-label="nq-paper-edit"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-paper-edit"/></svg></div>
+                        <div class="hint" aria-label="nq-qr-code"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-qr-code"/></svg></div>
+                        <div class="hint" aria-label="nq-scan-qr-code"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-scan-qr-code"/></svg></div>
+                        <div class="hint" aria-label="nq-shredder"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-shredder"/></svg></div>
+                        <div class="hint" aria-label="nq-settings"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-settings"/></svg></div>
+                        <br/>
+                        <div class="hint" aria-label="nq-ledger"><svg class="nq-icon ledger"><use xlink:href="./nimiq-style.icons.svg#nq-ledger"/></svg></div>
                     </div>
 
                     <div class="nq-card-body nq-blue-bg icons">
-                        <svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#lock-locked"/></svg>
-                        <svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#lock-unlocked"/></svg>
-                    </div>
-
-                    <div class="code">
-&lt;use xlink:href="./nimiq-style.icons.svg#<b>lock-locked</b>"/>
-&lt;use xlink:href="./nimiq-style.icons.svg#<b>lock-unlocked</b>"/>
+                        <div class="hint" aria-label="nq-arrow-left"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-arrow-left"/></svg></div>
+                        <div class="hint" aria-label="nq-arrow-right"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-arrow-right"/></svg></div>
+                        <div class="hint" aria-label="nq-arrow-right-small"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-arrow-right-small"/></svg></div>
+                        <div class="hint" aria-label="nq-caret-right-small"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-caret-right-small"/></svg></div>
+                        <div class="hint" aria-label="nq-checkmark"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-checkmark"/></svg></div>
+                        <div class="hint" aria-label="nq-download"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-download"/></svg></div>
+                        <div class="hint" aria-label="nq-transfer"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-transfer"/></svg></div>
+                        <div class="hint" aria-label="nq-questionmark"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-questionmark"/></svg></div>
+                        <br/>
+                        <div class="hint" aria-label="nq-close"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-close"/></svg></div>
+                        <div class="hint" aria-label="nq-info-circle"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-info-circle"/></svg></div>
+                        <div class="hint" aria-label="nq-plus-circle"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-plus-circle"/></svg></div>
+                        <div class="hint" aria-label="nq-face-neutral"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-face-neutral"/></svg></div>
+                        <div class="hint" aria-label="nq-face-sad"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-face-sad"/></svg></div>
+                        <div class="hint" aria-label="nq-login"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-login"/></svg></div>
+                        <br/>
+                        <div class="hint" aria-label="nq-lock-locked"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-lock-locked"/></svg></div>
+                        <div class="hint" aria-label="nq-lock-unlocked"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-lock-unlocked"/></svg></div>
+                        <div class="hint" aria-label="nq-contacts"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-contacts"/></svg></div>
+                        <div class="hint" aria-label="nq-fire"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-fire"/></svg></div>
+                        <div class="hint" aria-label="nq-skull"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-skull"/></svg></div>
+                        <div class="hint" aria-label="nq-view"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-view"/></svg></div>
+                        <div class="hint" aria-label="nq-view-off"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-view-off"/></svg></div>
+                        <div class="hint" aria-label="nq-hexagon"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-hexagon"/></svg></div>
+                        <br/>
+                        <div class="hint" aria-label="nq-keys"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-keys"/></svg></div>
+                        <div class="hint" aria-label="nq-browser-login"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-browser-login"/></svg></div>
+                        <div class="hint" aria-label="nq-copy"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-copy"/></svg></div>
+                        <div class="hint" aria-label="nq-paper-edit"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-paper-edit"/></svg></div>
+                        <div class="hint" aria-label="nq-qr-code"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-qr-code"/></svg></div>
+                        <div class="hint" aria-label="nq-scan-qr-code"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-scan-qr-code"/></svg></div>
+                        <div class="hint" aria-label="nq-shredder"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-shredder"/></svg></div>
+                        <div class="hint" aria-label="nq-settings"><svg class="nq-icon"><use xlink:href="./nimiq-style.icons.svg#nq-settings"/></svg></div>
+                        <br/>
+                        <div class="hint" aria-label="nq-ledger"><svg class="nq-icon ledger"><use xlink:href="./nimiq-style.icons.svg#nq-ledger"/></svg></div>
                     </div>
                 </div>
             </div><!-- #cards -->
