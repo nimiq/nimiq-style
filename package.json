@@ -11,13 +11,16 @@
   "license": "MIT",
   "files": [
     "nimiq-style.min.css",
-    "nimiq-style-icons.min.css"
+    "nimiq-style.icons.svg"
   ],
   "scripts": {
-    "build": "cleancss -o nimiq-style.min.css src/main.css && cleancss -o nimiq-style-icons.min.css src/icons.css"
+    "build:css": "cleancss -o nimiq-style.min.css src/main.css",
+    "build:svg": "svgstore -o nimiq-style.icons.svg src/icons/*.svg",
+    "build": "yarn build:css && yarn build:svg"
   },
   "devDependencies": {
-    "clean-css-cli": "^4.2.1"
+    "clean-css-cli": "^4.2.1",
+    "svgstore-cli": "^1.3.1"
   },
   "bugs": {
     "url": "https://github.com/nimiq/nimiq-style/issues"
