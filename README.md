@@ -37,7 +37,7 @@ To use icons, you need to link to the icon sprite:
 You can also link to the Nimiq Style CSS directly in your HTML:
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/@nimiq/style@v0.5.0/nimiq-style.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@nimiq/style@v0.5.1/nimiq-style.min.css" rel="stylesheet">
 ```
 
 **Note:** To use icons, you need to host and serve
