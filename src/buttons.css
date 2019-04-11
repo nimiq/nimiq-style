@@ -30,17 +30,6 @@
     transform: perspective(1px);
 }
 
-.nq-button.inverse {
-    background: white !important;
-    color: var(--nimiq-blue);
-}
-
-.nq-button[disabled] {
-    opacity: 0.4;
-    box-shadow: none;
-    cursor: not-allowed;
-}
-
 .nq-button:hover,
 .nq-button:active {
     transform: scale(1.02) perspective(1px);
@@ -54,10 +43,6 @@
     transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.nq-button[disabled]:hover,
-.nq-button[disabled]:active {
-    transform: none;
-}
 
 .nq-button-s {
     display: inline-block;
@@ -209,4 +194,29 @@
 
 .nq-button-s.red[disabled]:hover {
     background-color: rgba(216, 65, 51, 0.1); /* Based on Nimiq Red */
+}
+
+/* Special styles */
+
+.nq-button.inverse {
+    background: white;
+    color: var(--nimiq-blue);
+}
+
+.nq-button[disabled] {
+    background: rgba(31, 35, 72, 0.07);
+    color: rgba(31, 35, 72, 0.3);
+    box-shadow: none !important;
+    transform: none;
+    cursor: not-allowed;
+}
+
+.nq-button[disabled]:hover,
+.nq-button[disabled]:active {
+    transform: none;
+}
+
+.nq-button.inverse[disabled] {
+    background: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.5);
 }
