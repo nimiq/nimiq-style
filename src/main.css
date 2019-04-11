@@ -6,9 +6,10 @@ Styleguide: https://nimiq.com/styleguide
 
 @import 'typography.css';
 @import 'buttons.css';
+@import 'inputs.css';
 @import 'layout.css';
 @import 'theme.css';
+@import 'dark-adaptions.css';
 @import 'icons.css';
 
-/* @import 'inputs.css'; */
 /* @import 'animations/animations.css'; */

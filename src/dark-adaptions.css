@@ -1,0 +1,144 @@
+/* typography */
+
+.nq-blue-bg,
+.nq-light-blue-bg,
+.nq-gold-bg,
+.nq-green-bg,
+.nq-orange-bg,
+.nq-red-bg,
+.nq-purple-bg,
+.nq-pink-bg,
+.nq-light-green-bg,
+.nq-brown-bg,
+
+.nq-blue-bg .nq-link,
+.nq-light-blue-bg .nq-link,
+.nq-gold-bg .nq-link,
+.nq-green-bg .nq-link,
+.nq-orange-bg .nq-link,
+.nq-red-bg .nq-link,
+.nq-purple-bg .nq-link,
+.nq-pink-bg .nq-link,
+.nq-light-green-bg .nq-link,
+.nq-brown-bg .nq-link {
+    color: white;
+}
+
+.nq-blue-bg .nq-text,
+.nq-light-blue-bg .nq-text,
+.nq-gold-bg .nq-text,
+.nq-green-bg .nq-text,
+.nq-orange-bg .nq-text,
+.nq-red-bg .nq-text,
+.nq-purple-bg .nq-text,
+.nq-pink-bg .nq-text,
+.nq-light-green-bg .nq-text,
+.nq-brown-bg .nq-text,
+
+.nq-blue-bg .nq-label,
+.nq-light-blue-bg .nq-label,
+.nq-gold-bg .nq-label,
+.nq-green-bg .nq-label,
+.nq-orange-bg .nq-label,
+.nq-red-bg .nq-label,
+.nq-purple-bg .nq-label,
+.nq-pink-bg .nq-label,
+.nq-light-green-bg .nq-label,
+.nq-brown-bg .nq-label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* theme */
+
+.nq-blue-bg .nq-light-blue,
+.nq-light-blue-bg .nq-light-blue,
+.nq-gold-bg .nq-light-blue,
+.nq-green-bg .nq-light-blue,
+.nq-orange-bg .nq-light-blue,
+.nq-red-bg .nq-light-blue,
+.nq-purple-bg .nq-light-blue,
+.nq-pink-bg .nq-light-blue,
+.nq-light-green-bg .nq-light-blue,
+.nq-brown-bg .nq-light-blue {
+    color: var(--nimiq-light-blue-on-dark);
+}
+
+.nq-blue-bg .nq-red,
+.nq-light-blue-bg .nq-red,
+.nq-gold-bg .nq-red,
+.nq-green-bg .nq-red,
+.nq-orange-bg .nq-red,
+.nq-red-bg .nq-red,
+.nq-purple-bg .nq-red,
+.nq-pink-bg .nq-red,
+.nq-light-green-bg .nq-red,
+.nq-brown-bg .nq-red {
+    color: var(--nimiq-red-on-dark);
+}
+
+/* inputs */
+
+.nq-blue-bg .nq-input,
+.nq-light-blue-bg .nq-input,
+.nq-gold-bg .nq-input,
+.nq-green-bg .nq-input,
+.nq-orange-bg .nq-input,
+.nq-red-bg .nq-input,
+.nq-purple-bg .nq-input,
+.nq-pink-bg .nq-input,
+.nq-light-green-bg .nq-input,
+.nq-brown-bg .nq-input {
+    border-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.nq-blue-bg .nq-input.vanishing,
+.nq-light-blue-bg .nq-input.vanishing,
+.nq-gold-bg .nq-input.vanishing,
+.nq-green-bg .nq-input.vanishing,
+.nq-orange-bg .nq-input.vanishing,
+.nq-red-bg .nq-input.vanishing,
+.nq-purple-bg .nq-input.vanishing,
+.nq-pink-bg .nq-input.vanishing,
+.nq-light-green-bg .nq-input.vanishing,
+.nq-brown-bg .nq-input.vanishing {
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.nq-blue-bg .nq-input::placeholder,
+.nq-light-blue-bg .nq-input::placeholder,
+.nq-gold-bg .nq-input::placeholder,
+.nq-green-bg .nq-input::placeholder,
+.nq-orange-bg .nq-input::placeholder,
+.nq-red-bg .nq-input::placeholder,
+.nq-purple-bg .nq-input::placeholder,
+.nq-pink-bg .nq-input::placeholder,
+.nq-light-green-bg .nq-input::placeholder,
+.nq-brown-bg .nq-input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.nq-blue-bg .nq-input:hover,
+.nq-light-blue-bg .nq-input:hover,
+.nq-gold-bg .nq-input:hover,
+.nq-green-bg .nq-input:hover,
+.nq-orange-bg .nq-input:hover,
+.nq-red-bg .nq-input:hover,
+.nq-purple-bg .nq-input:hover,
+.nq-pink-bg .nq-input:hover,
+.nq-light-green-bg .nq-input:hover,
+.nq-brown-bg .nq-input:hover,
+
+.nq-blue-bg .nq-input:focus,
+.nq-light-blue-bg .nq-input:focus,
+.nq-gold-bg .nq-input:focus,
+.nq-green-bg .nq-input:focus,
+.nq-orange-bg .nq-input:focus,
+.nq-red-bg .nq-input:focus,
+.nq-purple-bg .nq-input:focus,
+.nq-pink-bg .nq-input:focus,
+.nq-light-green-bg .nq-input:focus,
+.nq-brown-bg .nq-input:focus{
+    border-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}

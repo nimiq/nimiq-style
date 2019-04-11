@@ -1,3 +1,41 @@
+.nq-input {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 1rem 2rem;
+    border: solid 2px rgba(31, 35, 72, 0.1); /* Based on Nimiq Blue */
+    color: var(--nimiq-blue);
+    background: transparent;
+    border-radius: 0.5rem;
+    outline: none;
+    transition: color .2s ease, border .2s ease;
+    background-clip: padding-box; /* Remove top inset box shadow in iOS */
+}
+
+.nq-input.vanishing {
+    /* Cannot use transparent because of iOS */
+    border-color: rgba(31, 35, 72, 0); /* Based on Nimiq Blue */
+}
+
+.nq-input::placeholder {
+    color: rgba(31, 35, 72, 0.5); /* Based on Nimiq Blue */
+}
+
+.nq-input:hover {
+    border-color: rgba(31, 35, 72, 0.14); /* Based on Nimiq Blue */
+}
+
+.nq-input:hover::placeholder,
+.nq-input:focus::placeholder {
+    color: rgba(5, 130, 202, 0.7); /* Based on Nimiq Light Blue */
+}
+
+.nq-input:focus,
+.nq-input.vanishing:focus {
+    border-color: rgba(5, 130, 202, 0.2); /* Based on Nimiq Light Blue */
+    color: var(--nimiq-light-blue);
+}
+
+
 /* Text Inputs */
 
 /* input[type="text"],
