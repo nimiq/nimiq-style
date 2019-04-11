@@ -13,6 +13,9 @@ html {
     --nimiq-gray:       #F4F4F4;
     --nimiq-light-gray: #FAFAFA;
 
+    --nimiq-light-blue-on-dark: #0CA6FE; /* rgb(12, 166, 254) */
+    --nimiq-red-on-dark:        #FF5C48; /* rgb(255, 92, 72) */
+
     /* Background gradients */
     --nimiq-blue-bg:       radial-gradient(circle at bottom right, #260133, var(--nimiq-blue));
     --nimiq-light-blue-bg: radial-gradient(circle at bottom right, #265DD7, var(--nimiq-light-blue));
@@ -123,6 +126,32 @@ body {
 .nq-light-green-bg .nq-label,
 .nq-brown-bg .nq-label {
     color: rgba(255, 255, 255, 0.7);
+}
+
+.nq-blue-bg .nq-light-blue,
+.nq-light-blue-bg .nq-light-blue,
+.nq-gold-bg .nq-light-blue,
+.nq-green-bg .nq-light-blue,
+.nq-orange-bg .nq-light-blue,
+.nq-red-bg .nq-light-blue,
+.nq-purple-bg .nq-light-blue,
+.nq-pink-bg .nq-light-blue,
+.nq-light-green-bg .nq-light-blue,
+.nq-brown-bg .nq-light-blue {
+    color: var(--nimiq-light-blue-on-dark);
+}
+
+.nq-blue-bg .nq-red,
+.nq-light-blue-bg .nq-red,
+.nq-gold-bg .nq-red,
+.nq-green-bg .nq-red,
+.nq-orange-bg .nq-red,
+.nq-red-bg .nq-red,
+.nq-purple-bg .nq-red,
+.nq-pink-bg .nq-red,
+.nq-light-green-bg .nq-red,
+.nq-brown-bg .nq-red {
+    color: var(--nimiq-red-on-dark);
 }
 
 

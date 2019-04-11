@@ -179,6 +179,11 @@
                 font-weight: bold;
             }
 
+            .rounded-padding {
+                border-radius: 1rem;
+                padding: 2rem;
+            }
+
             .small-buttons .nq-button-s:not(:first-child) {
                 margin-top: 1rem;
             }
@@ -307,6 +312,11 @@
                         <p class="nq-pink">Nimiq Pink</p>
                         <p class="nq-light-green">Nimiq Light Green</p>
                         <p class="nq-brown">Nimiq Brown</p>
+
+                        <div class="nq-blue-bg rounded-padding">
+                            <p class="nq-light-blue">Nimiq Light Blue</p>
+                            <p class="nq-red">Nimiq Red</p>
+                        </div>
                     </div>
 
                     <div class="code">&lt;p class="<b>nq-blue</b>">Nimiq Blue&lt;/p>
@@ -383,7 +393,7 @@
                         <button class="nq-button">Regular button</button>
                         <button class="nq-button">Button with lots of text</button>
                         <button class="nq-button" disabled>Disabled button</button>
-                        <div style="padding: 2rem; border-radius: 1rem;" class="nq-light-blue-bg">
+                        <div class="nq-light-blue-bg rounded-padding">
                             <button class="nq-button light-blue inverse">Inverse button</button>
                             <button class="nq-button light-blue inverse" disabled>Inverse disabled</button>
                         </div>
