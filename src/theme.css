@@ -13,9 +13,6 @@ html {
     --nimiq-gray:       #F4F4F4;
     --nimiq-light-gray: #FAFAFA;
 
-    --nimiq-light-blue-on-dark: #0CA6FE; /* rgb(12, 166, 254) */
-    --nimiq-red-on-dark:        #FF5C48; /* rgb(255, 92, 72) */
-
     /* Background gradients */
     --nimiq-blue-bg:       radial-gradient(circle at bottom right, #260133, var(--nimiq-blue));
     --nimiq-light-blue-bg: radial-gradient(circle at bottom right, #265DD7, var(--nimiq-light-blue));

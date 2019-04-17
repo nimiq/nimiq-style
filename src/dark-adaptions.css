@@ -50,30 +50,12 @@
 
 /* theme */
 
-.nq-blue-bg .nq-light-blue,
-.nq-light-blue-bg .nq-light-blue,
-.nq-gold-bg .nq-light-blue,
-.nq-green-bg .nq-light-blue,
-.nq-orange-bg .nq-light-blue,
-.nq-red-bg .nq-light-blue,
-.nq-purple-bg .nq-light-blue,
-.nq-pink-bg .nq-light-blue,
-.nq-light-green-bg .nq-light-blue,
-.nq-brown-bg .nq-light-blue {
-    color: var(--nimiq-light-blue-on-dark);
+.nq-blue-bg {
+    --nimiq-light-blue: #0CA6FE; /* rgb(12, 166, 254) */
 }
 
-.nq-blue-bg .nq-red,
-.nq-light-blue-bg .nq-red,
-.nq-gold-bg .nq-red,
-.nq-green-bg .nq-red,
-.nq-orange-bg .nq-red,
-.nq-red-bg .nq-red,
-.nq-purple-bg .nq-red,
-.nq-pink-bg .nq-red,
-.nq-light-green-bg .nq-red,
-.nq-brown-bg .nq-red {
-    color: var(--nimiq-red-on-dark);
+.nq-blue-bg {
+    --nimiq-red:        #FF5C48; /* rgb(255, 92, 72) */
 }
 
 /* inputs */
