@@ -51,7 +51,7 @@ body {
 }
 
 .nq-card-header {
-    padding: 4rem;
+    padding: 3.75rem 4rem;
     text-align: center;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -59,14 +59,13 @@ body {
 
 @media (max-width: 450px) {
     .nq-card-header {
-        padding: 3rem;
+        padding: 2.75rem 3rem;
     }
 }
 
 .nq-card-header .nq-h1,
 .nq-card-header .nq-h2 {
     margin: 0;
-    line-height: 1;
 }
 
 .nq-card-body {
