@@ -61,6 +61,11 @@ body {
     color: rgb(31, 35, 72, 0.7); /* Based on Nimiq Blue */
 }
 
+.nq-warning {
+    font-weight: 600;
+    color: var(--nimiq-orange);
+}
+
 .nq-link,
 .nq-text a,
 .nq-style a {

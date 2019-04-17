@@ -68,6 +68,11 @@ body {
     margin: 0;
 }
 
+.nq-card-header .nq-warning {
+    margin: 3rem 0 0;
+    text-align: center;
+}
+
 .nq-card-body {
     padding: 4rem;
 }
