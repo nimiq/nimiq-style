@@ -11,7 +11,8 @@
   "license": "MIT",
   "files": [
     "nimiq-style.min.css",
-    "nimiq-style.icons.svg"
+    "nimiq-style.icons.svg",
+    "src/icons"
   ],
   "scripts": {
     "build:css": "cleancss -o nimiq-style.min.css src/main.css",
