@@ -38,43 +38,43 @@ body {
 }
 
 .nq-blue {
-    color: var(--nimiq-blue);
+    color: var(--nimiq-blue) !important;
 }
 
 .nq-light-blue {
-    color: var(--nimiq-light-blue);
+    color: var(--nimiq-light-blue) !important;
 }
 
 .nq-gold {
-    color: var(--nimiq-gold);
+    color: var(--nimiq-gold) !important;
 }
 
 .nq-green {
-    color: var(--nimiq-green);
+    color: var(--nimiq-green) !important;
 }
 
 .nq-orange {
-    color: var(--nimiq-orange);
+    color: var(--nimiq-orange) !important;
 }
 
 .nq-red {
-    color: var(--nimiq-red);
+    color: var(--nimiq-red) !important;
 }
 
 .nq-purple {
-    color: var(--nimiq-purple);
+    color: var(--nimiq-purple) !important;
 }
 
 .nq-pink {
-    color: var(--nimiq-pink);
+    color: var(--nimiq-pink) !important;
 }
 
 .nq-light-green {
-    color: var(--nimiq-light-green);
+    color: var(--nimiq-light-green) !important;
 }
 
 .nq-brown {
-    color: var(--nimiq-brown);
+    color: var(--nimiq-brown) !important;
 }
 
 .nq-blue-bg {
