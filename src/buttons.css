@@ -6,8 +6,8 @@
 .nq-button {
     height: 8rem;
     line-height: 2.5rem;
-    background: var(--nimiq-blue);
-    background-image: var(--nimiq-blue-bg);
+    background: var(--nimiq-indigo);
+    background-image: var(--nimiq-indigo-bg);
     color: white;
     font-size: 2rem;
     font-weight: bold;
@@ -54,7 +54,7 @@
     letter-spacing: 0.014em;
     padding: 0 1.5rem;
     background-color: rgba(31, 35, 72, 0.07); /* Based on Nimiq Blue */
-    color: var(--nimiq-blue);
+    color: var(--nimiq-indigo);
     border-radius: 1.6875rem;
     transition: color 300ms ease, background-color 300ms ease;
     will-change: color, background-color;
@@ -80,70 +80,70 @@
 }
 
 .nq-button-s:hover {
-    background-color: rgba(31, 35, 72, 0.12); /* Based on Nimiq Blue */
+    background-color: rgba(31, 35, 72, 0.12); /* Based on Nimiq Indigo */
 }
 
 .nq-button-s[disabled]:hover {
-    background-color: rgba(31, 35, 72, 0.07); /* Based on Nimiq Blue */
+    background-color: rgba(31, 35, 72, 0.07); /* Based on Nimiq Indigo */
 }
 
 .nq-button-s:focus {
     outline: none;
-    color: var(--nimiq-light-blue);
-    background-color: rgba(5, 130, 202, 0.16); /* Based on Nimiq Light Blue */
+    color: var(--nimiq-blue);
+    background-color: rgba(5, 130, 202, 0.16); /* Based on Nimiq Blue */
 }
 
 
 /* Color variations */
 
-/* light blue */
-.nq-button.light-blue {
-    background: var(--nimiq-light-blue);
-    background-image: var(--nimiq-light-blue-bg);
+/* blue */
+.nq-button.blue {
+    background: var(--nimiq-blue);
+    background-image: var(--nimiq-blue-bg);
 }
 
-.nq-button.light-blue.inverse {
-    color: var(--nimiq-light-blue);
+.nq-button.blue.inverse {
+    color: var(--nimiq-blue);
 }
 
-.nq-button-s.light-blue {
-    color: var(--nimiq-light-blue);
-    background-color: rgba(5, 130, 202, 0.1); /* Based on Nimiq Light Blue */
+.nq-button-s.blue {
+    color: var(--nimiq-blue);
+    background-color: rgba(5, 130, 202, 0.1); /* Based on Nimiq Blue */
 }
 
-.nq-button-s.light-blue:hover,
-.nq-button-s.light-blue:active,
-.nq-button-s.light-blue:focus {
-    background-color: rgba(5, 130, 202, 0.16); /* Based on Nimiq Light Blue */
+.nq-button-s.blue:hover,
+.nq-button-s.blue:active,
+.nq-button-s.blue:focus {
+    background-color: rgba(5, 130, 202, 0.16); /* Based on Nimiq Blue */
 }
 
-.nq-button-s.light-blue[disabled]:hover {
-    background-color: rgba(5, 130, 202, 0.1); /* Based on Nimiq Light Blue */
+.nq-button-s.blue[disabled]:hover {
+    background-color: rgba(5, 130, 202, 0.1); /* Based on Nimiq Blue */
 }
 
-/* green */
-.nq-button.green {
-    background: var(--nimiq-green);
-    background-image: var(--nimiq-green-bg);
+/* teal */
+.nq-button.teal {
+    background: var(--nimiq-teal);
+    background-image: var(--nimiq-teal-bg);
 }
 
-.nq-button.green.inverse {
-    color: var(--nimiq-green);
+.nq-button.teal.inverse {
+    color: var(--nimiq-teal);
 }
 
-.nq-button-s.green {
-    color: var(--nimiq-green);
-    background-color: rgba(33, 188, 165, 0.1); /* Based on Nimiq Green */
+.nq-button-s.teal {
+    color: var(--nimiq-teal);
+    background-color: rgba(33, 188, 165, 0.1); /* Based on Nimiq Teal */
 }
 
-.nq-button-s.green:hover,
-.nq-button-s.green:active,
-.nq-button-s.green:focus {
-    background-color: rgba(33, 188, 165, 0.16); /* Based on Nimiq Green */
+.nq-button-s.teal:hover,
+.nq-button-s.teal:active,
+.nq-button-s.teal:focus {
+    background-color: rgba(33, 188, 165, 0.16); /* Based on Nimiq Teal */
 }
 
-.nq-button-s.green[disabled]:hover {
-    background-color: rgba(33, 188, 165, 0.1); /* Based on Nimiq Green */
+.nq-button-s.teal[disabled]:hover {
+    background-color: rgba(33, 188, 165, 0.1); /* Based on Nimiq Teal */
 }
 
 /* orange */
@@ -200,7 +200,7 @@
 
 .nq-button.inverse {
     background: white;
-    color: var(--nimiq-blue);
+    color: var(--nimiq-indigo);
 }
 
 .nq-button[disabled] {

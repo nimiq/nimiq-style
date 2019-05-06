@@ -66,11 +66,11 @@ body {
 }
 
 .nq-notice.info {
-    color: var(--nimiq-light-blue);
+    color: var(--nimiq-blue);
 }
 
 .nq-notice.success {
-    color: var(--nimiq-green);
+    color: var(--nimiq-teal);
 }
 
 .nq-notice.warning {
@@ -84,7 +84,7 @@ body {
 .nq-link,
 .nq-text a,
 .nq-style a {
-    color: var(--nimiq-light-blue);
+    color: var(--nimiq-blue);
     text-decoration: none;
 }
 

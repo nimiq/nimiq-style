@@ -4,7 +4,7 @@
     font-weight: inherit;
     padding: 1rem 2rem;
     border: solid 2px rgba(31, 35, 72, 0.1); /* Based on Nimiq Blue */
-    color: var(--nimiq-blue);
+    color: var(--nimiq-indigo);
     background: transparent;
     border-radius: 0.5rem;
     outline: none;
@@ -33,7 +33,7 @@
 .nq-input:focus,
 .nq-input.vanishing:focus {
     border-color: rgba(5, 130, 202, 0.2); /* Based on Nimiq Light Blue */
-    color: var(--nimiq-light-blue);
+    color: var(--nimiq-blue);
 }
 
 

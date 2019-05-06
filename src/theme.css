@@ -1,29 +1,29 @@
 html {
     /* Nimiq color palette */
-    --nimiq-blue:       #1F2348; /* rgb(31, 35, 72) */
-    --nimiq-light-blue: #0582CA; /* rgb(5, 130, 202) */
-    --nimiq-gold:       #E9B213; /* rgb(233, 178, 19) */
-    --nimiq-green:      #21BCA5; /* rgb(33, 188, 165) */
+    --nimiq-indigo:     #1F2348; /* rgb(31, 35, 72) */
+    --nimiq-blue:       #0582CA; /* rgb(5, 130, 202) */
+    --nimiq-yellow:     #E9B213; /* rgb(233, 178, 19) */
+    --nimiq-teal:       #21BCA5; /* rgb(33, 188, 165) */
     --nimiq-orange:     #FC8702; /* rgb(252, 135, 2) */
     --nimiq-red:        #D94432; /* rgb(216, 65, 51) */
     --nimiq-purple:     #5F4B8B; /* rgb(95, 75, 139) */
     --nimiq-pink:       #FA7268; /* rgb(250, 114, 104) */
-    --nimiq-light-green:#88B04B; /* rgb(136, 176, 75) */
+    --nimiq-green:      #88B04B; /* rgb(136, 176, 75) */
     --nimiq-brown:      #795548; /* rgb(121, 85, 72) */
     --nimiq-gray:       #F4F4F4;
     --nimiq-light-gray: #FAFAFA;
 
     /* Background gradients */
-    --nimiq-blue-bg:       radial-gradient(circle at bottom right, #260133, var(--nimiq-blue));
-    --nimiq-light-blue-bg: radial-gradient(circle at bottom right, #265DD7, var(--nimiq-light-blue));
-    --nimiq-gold-bg:       radial-gradient(circle at bottom right, #EC991C, var(--nimiq-gold));
-    --nimiq-green-bg:      radial-gradient(circle at bottom right, #41A38E, var(--nimiq-green));
-    --nimiq-orange-bg:     radial-gradient(circle at bottom right, #FD6216, var(--nimiq-orange));
-    --nimiq-red-bg:        radial-gradient(circle at bottom right, #CC3047, var(--nimiq-red));
-    --nimiq-purple-bg:     radial-gradient(circle at bottom right, #4D4C96, var(--nimiq-purple));
-    --nimiq-pink-bg:       radial-gradient(circle at bottom right, #E0516B, var(--nimiq-pink));
-    --nimiq-light-green-bg:radial-gradient(circle at bottom right, #70B069, var(--nimiq-light-green));
-    --nimiq-brown-bg:      radial-gradient(circle at bottom right, #724147, var(--nimiq-brown));
+    --nimiq-indigo-bg: radial-gradient(circle at bottom right, #260133, var(--nimiq-indigo));
+    --nimiq-blue-bg:   radial-gradient(circle at bottom right, #265DD7, var(--nimiq-blue));
+    --nimiq-yellow-bg: radial-gradient(circle at bottom right, #EC991C, var(--nimiq-yellow));
+    --nimiq-teal-bg:   radial-gradient(circle at bottom right, #41A38E, var(--nimiq-teal));
+    --nimiq-orange-bg: radial-gradient(circle at bottom right, #FD6216, var(--nimiq-orange));
+    --nimiq-red-bg:    radial-gradient(circle at bottom right, #CC3047, var(--nimiq-red));
+    --nimiq-purple-bg: radial-gradient(circle at bottom right, #4D4C96, var(--nimiq-purple));
+    --nimiq-pink-bg:   radial-gradient(circle at bottom right, #E0516B, var(--nimiq-pink));
+    --nimiq-green-bg:  radial-gradient(circle at bottom right, #70B069, var(--nimiq-green));
+    --nimiq-brown-bg:  radial-gradient(circle at bottom right, #724147, var(--nimiq-brown));
 
 
     /* Special colors */
@@ -32,25 +32,25 @@ html {
 }
 
 body {
-    color: var(--nimiq-blue);
+    color: var(--nimiq-indigo);
     background: var(--nimiq-gray);
     margin: 0;
+}
+
+.nq-indigo {
+    color: var(--nimiq-indigo) !important;
 }
 
 .nq-blue {
     color: var(--nimiq-blue) !important;
 }
 
-.nq-light-blue {
-    color: var(--nimiq-light-blue) !important;
+.nq-yellow {
+    color: var(--nimiq-yellow) !important;
 }
 
-.nq-gold {
-    color: var(--nimiq-gold) !important;
-}
-
-.nq-green {
-    color: var(--nimiq-green) !important;
+.nq-teal {
+    color: var(--nimiq-teal) !important;
 }
 
 .nq-orange {
@@ -69,12 +69,17 @@ body {
     color: var(--nimiq-pink) !important;
 }
 
-.nq-light-green {
-    color: var(--nimiq-light-green) !important;
+.nq-green {
+    color: var(--nimiq-green) !important;
 }
 
 .nq-brown {
     color: var(--nimiq-brown) !important;
+}
+
+.nq-indigo-bg {
+    background: var(--nimiq-indigo);
+    background-image: var(--nimiq-indigo-bg);
 }
 
 .nq-blue-bg {
@@ -82,19 +87,14 @@ body {
     background-image: var(--nimiq-blue-bg);
 }
 
-.nq-light-blue-bg {
-    background: var(--nimiq-light-blue);
-    background-image: var(--nimiq-light-blue-bg);
+.nq-yellow-bg {
+    background: var(--nimiq-yellow);
+    background-image: var(--nimiq-yellow-bg);
 }
 
-.nq-gold-bg {
-    background: var(--nimiq-gold);
-    background-image: var(--nimiq-gold-bg);
-}
-
-.nq-green-bg {
-    background: var(--nimiq-green);
-    background-image: var(--nimiq-green-bg);
+.nq-teal-bg {
+    background: var(--nimiq-teal);
+    background-image: var(--nimiq-teal-bg);
 }
 
 .nq-orange-bg {
@@ -117,9 +117,9 @@ body {
     background-image: var(--nimiq-pink-bg);
 }
 
-.nq-light-green-bg {
-    background: var(--nimiq-light-green);
-    background-image: var(--nimiq-light-green-bg);
+.nq-green-bg {
+    background: var(--nimiq-green);
+    background-image: var(--nimiq-green-bg);
 }
 
 .nq-brown-bg {
