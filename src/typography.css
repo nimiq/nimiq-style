@@ -40,7 +40,7 @@ body {
 .nq-style p {
     font-size: 2rem;
     line-height: 1.3125;
-    color: rgb(31, 35, 72, 0.7); /* Based on Nimiq Blue */
+    color: rgba(31, 35, 72, 0.7); /* Based on Nimiq Blue */
     margin: 2rem 0;
 }
 
@@ -58,7 +58,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.107em;
     margin: 1rem 0;
-    color: rgb(31, 35, 72, 0.7); /* Based on Nimiq Blue */
+    color: rgba(31, 35, 72, 0.7); /* Based on Nimiq Blue */
 }
 
 .nq-notice {
