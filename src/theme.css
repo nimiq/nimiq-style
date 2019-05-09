@@ -13,6 +13,11 @@ html {
     --nimiq-gray:       #F4F4F4;
     --nimiq-light-gray: #FAFAFA;
 
+    --nimiq-light-blue-hover: #0071C3; /* rgb(5, 130, 202) */
+    --nimiq-green-hover:      #1C9A88; /* rgb(33, 188, 165) */
+    --nimiq-orange-hover:     #FC7500; /* rgb(252, 135, 2) */
+    --nimiq-red-hover:        #C62D2D; /* rgb(216, 65, 51) */
+    
     /* Background gradients */
     --nimiq-blue-bg:       radial-gradient(circle at bottom right, #260133, var(--nimiq-blue));
     --nimiq-light-blue-bg: radial-gradient(circle at bottom right, #265DD7, var(--nimiq-light-blue));

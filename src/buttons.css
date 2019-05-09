@@ -4,9 +4,10 @@
 }
 
 .nq-button {
-    height: 8rem;
+    position: relative;
+    height: 7.5rem;
     line-height: 2.5rem;
-    background: var(--nimiq-blue);
+    /* background: var(--nimiq-blue); */
     background-image: var(--nimiq-blue-bg);
     color: white;
     font-size: 2rem;
@@ -18,31 +19,48 @@
     border-radius: 4rem;
     min-width: 25rem;
     margin: 2rem auto;
-    box-shadow: 0 0.5rem 1.75rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    transition: transform 450ms ease, box-shadow 450ms ease, opacity 300ms ease;
+    transition: transform 450ms cubic-bezier(0.25, 0, 0, 1), box-shadow 450ms cubic-bezier(0.25, 0, 0, 1);
     will-change: box-shadow;
     text-decoration: none;
     display: block;
     text-align: center;
     font-family: inherit;
     overflow: hidden;
-    transform: perspective(1px);
+}
+
+.nq-button:not([disabled]):before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle at bottom right, #2D0849, #262B5A);
+    opacity: 0;
+    transition: opacity 300ms cubic-bezier(0.25, 0, 0, 1);
+    z-index: -1;
 }
 
 .nq-button:hover,
 .nq-button:active {
-    transform: scale(1.02) perspective(1px);
-    box-shadow: 0 0.5rem 3rem rgba(0,0,0,0.15);
+    box-shadow: 0 1rem 2.5rem rgba(0,0,0,0.2);
+    transform: translate3D(0,-2px,0);
+}
+
+.nq-button:hover:before,
+.nq-button:active:before,
+.nq-button:focus:before {
+    opacity: 1;
 }
 
 .nq-button:focus {
     outline: none;
-    transform: scale(1.02) translate3D(0,1px,0) perspective(1px);
-    box-shadow: 0 0 0 rgba(0,0,0,0.15);
-    transition: transform .2s ease, box-shadow .2s ease;
+    box-shadow: 0 .2rem .3rem rgba(0,0,0,0.2);
+    transform: translate3D(0,1px,0);
+    transition: transform 200ms cubic-bezier(.41,.34,.26,1.55), box-shadow 200ms cubic-bezier(.41,.34,.26,1.55) !important;
 }
-
 
 .nq-button-s {
     display: inline-block;
@@ -56,7 +74,7 @@
     background-color: rgba(31, 35, 72, 0.07); /* Based on Nimiq Blue */
     color: var(--nimiq-blue);
     border-radius: 1.6875rem;
-    transition: color 300ms ease, background-color 300ms ease;
+    transition: color 300ms cubic-bezier(0.25, 0, 0, 1), background-color 300ms cubic-bezier(0.25, 0, 0, 1);
     will-change: color, background-color;
     border: none;
     cursor: pointer;
@@ -93,7 +111,6 @@
     background-color: rgba(5, 130, 202, 0.16); /* Based on Nimiq Light Blue */
 }
 
-
 /* Color variations */
 
 /* light blue */
@@ -102,8 +119,16 @@
     background-image: var(--nimiq-light-blue-bg);
 }
 
+.nq-button.light-blue:before {
+    background-image: radial-gradient(circle at bottom right, #2355C4, #0071C3);
+}
+
 .nq-button.light-blue.inverse {
     color: var(--nimiq-light-blue);
+}
+
+.nq-button.light-blue.inverse:hover {
+    color: #0071C3; 
 }
 
 .nq-button-s.light-blue {
@@ -114,10 +139,12 @@
 .nq-button-s.light-blue:hover,
 .nq-button-s.light-blue:active,
 .nq-button-s.light-blue:focus {
-    background-color: rgba(5, 130, 202, 0.16); /* Based on Nimiq Light Blue */
+    color: var(--nimiq-light-blue-hover);
+    background-color: rgba(5, 130, 202, 0.2); /* Based on Nimiq Light Blue */
 }
 
 .nq-button-s.light-blue[disabled]:hover {
+    color: var(--nimiq-light-blue);
     background-color: rgba(5, 130, 202, 0.1); /* Based on Nimiq Light Blue */
 }
 
@@ -125,6 +152,10 @@
 .nq-button.green {
     background: var(--nimiq-green);
     background-image: var(--nimiq-green-bg);
+}
+
+.nq-button.green:before {
+    background-image: radial-gradient(circle at bottom right, #3C9582, #1EAB96);
 }
 
 .nq-button.green.inverse {
@@ -139,10 +170,12 @@
 .nq-button-s.green:hover,
 .nq-button-s.green:active,
 .nq-button-s.green:focus {
-    background-color: rgba(33, 188, 165, 0.16); /* Based on Nimiq Green */
+    color: var(--nimiq-green-hover);
+    background-color: rgba(33, 188, 165, 0.2); /* Based on Nimiq Green */
 }
 
 .nq-button-s.green[disabled]:hover {
+    color: var(--nimiq-green);
     background-color: rgba(33, 188, 165, 0.1); /* Based on Nimiq Green */
 }
 
@@ -150,6 +183,10 @@
 .nq-button.orange {
     background: var(--nimiq-orange);
     background-image: var(--nimiq-orange-bg);
+}
+
+.nq-button.orange:before {
+    background-image: radial-gradient(circle at bottom right, #EA5200, #FC7500);
 }
 
 .nq-button.orange.inverse {
@@ -164,10 +201,12 @@
 .nq-button-s.orange:hover,
 .nq-button-s.orange:active,
 .nq-button-s.orange:focus {
-    background-color: rgba(252, 135, 2, 0.16); /* Based on Nimiq Orange */
+    color: var(--nimiq-orange-hover);
+    background-color: rgba(252, 135, 2, 0.2); /* Based on Nimiq Orange */
 }
 
 .nq-button-s.orange[disabled]:hover {
+    color: var(--nimiq-orange);
     background-color: rgba(252, 135, 2, 0.1); /* Based on Nimiq Orange */
 }
 
@@ -175,6 +214,10 @@
 .nq-button.red {
     background: var(--nimiq-red);
     background-image: var(--nimiq-red-bg);
+}
+
+.nq-button.red:before {
+    background: radial-gradient(circle at bottom right, #BF2D46, #D13030)
 }
 
 .nq-button.red.inverse {
@@ -189,10 +232,12 @@
 .nq-button-s.red:hover,
 .nq-button-s.red:active,
 .nq-button-s.red:focus {
-    background-color: rgba(216, 65, 51, 0.16); /* Based on Nimiq Red */
+    color: var(--nimiq-red-hover);
+    background-color: rgba(216, 65, 51, 0.2); /* Based on Nimiq Red */
 }
 
 .nq-button-s.red[disabled]:hover {
+    color: var(--nimiq-red);
     background-color: rgba(216, 65, 51, 0.1); /* Based on Nimiq Red */
 }
 
@@ -201,6 +246,11 @@
 .nq-button.inverse {
     background: white;
     color: var(--nimiq-blue);
+    transition: transform 450ms cubic-bezier(0.25, 0, 0, 1), box-shadow 450ms cubic-bezier(0.25, 0, 0, 1), color 300ms cubic-bezier(0.25, 0, 0, 1);
+}
+
+.nq-button.inverse:before {
+    background: #EFF0F2; /* Indigo 7% */
 }
 
 .nq-button[disabled] {
@@ -216,7 +266,9 @@
     transform: none;
 }
 
-.nq-button.inverse[disabled] {
+.nq-button.inverse[disabled],
+.nq-button.inverse[disabled]:hover,
+.nq-button.inverse[disabled]:active {
     background: rgba(255, 255, 255, 0.2);
     color: rgba(255, 255, 255, 0.5);
 }
