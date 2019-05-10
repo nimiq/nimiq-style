@@ -37,7 +37,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background-image: radial-gradient(circle at bottom right, #2D0849, #262B5A);
+    background-image: var(--nimiq-blue-bg-darkened);
     opacity: 0;
     transition: opacity 300ms cubic-bezier(0.25, 0, 0, 1);
     z-index: -1;
@@ -97,7 +97,10 @@
     bottom: -1.5rem;
 }
 
-.nq-button-s:hover {
+.nq-button-s:hover,
+.nq-button-s:active,
+.nq-button-s:focus {
+    color: var(--nimiq-blue-darkened);
     background-color: rgba(31, 35, 72, 0.12); /* Based on Nimiq Blue */
 }
 
@@ -107,8 +110,8 @@
 
 .nq-button-s:focus {
     outline: none;
-    color: var(--nimiq-light-blue);
-    background-color: rgba(5, 130, 202, 0.16); /* Based on Nimiq Light Blue */
+    /* color: var(--nimiq-light-blue-darkened); */
+    /* background-color: rgba(5, 130, 202, 0.16); Based on Nimiq Light Blue */
 }
 
 /* Color variations */
@@ -120,7 +123,7 @@
 }
 
 .nq-button.light-blue:before {
-    background-image: radial-gradient(circle at bottom right, #2355C4, #0071C3);
+    background-image: var(--nimiq-light-blue-bg-darkened);
 }
 
 .nq-button.light-blue.inverse {
@@ -139,7 +142,7 @@
 .nq-button-s.light-blue:hover,
 .nq-button-s.light-blue:active,
 .nq-button-s.light-blue:focus {
-    color: var(--nimiq-light-blue-hover);
+    color: var(--nimiq-light-blue-darkened);
     background-color: rgba(5, 130, 202, 0.2); /* Based on Nimiq Light Blue */
 }
 
@@ -155,7 +158,7 @@
 }
 
 .nq-button.green:before {
-    background-image: radial-gradient(circle at bottom right, #3C9582, #1EAB96);
+    background-image: var(--nimiq-green-bg-darkened);
 }
 
 .nq-button.green.inverse {
@@ -170,7 +173,7 @@
 .nq-button-s.green:hover,
 .nq-button-s.green:active,
 .nq-button-s.green:focus {
-    color: var(--nimiq-green-hover);
+    color: var(--nimiq-green-darkened);
     background-color: rgba(33, 188, 165, 0.2); /* Based on Nimiq Green */
 }
 
@@ -186,7 +189,7 @@
 }
 
 .nq-button.orange:before {
-    background-image: radial-gradient(circle at bottom right, #EA5200, #FC7500);
+    background-image: var(--nimiq-orange-bg-darkened);
 }
 
 .nq-button.orange.inverse {
@@ -201,7 +204,7 @@
 .nq-button-s.orange:hover,
 .nq-button-s.orange:active,
 .nq-button-s.orange:focus {
-    color: var(--nimiq-orange-hover);
+    color: var(--nimiq-orange-darkened);
     background-color: rgba(252, 135, 2, 0.2); /* Based on Nimiq Orange */
 }
 
@@ -217,7 +220,7 @@
 }
 
 .nq-button.red:before {
-    background: radial-gradient(circle at bottom right, #BF2D46, #D13030)
+    background: var(--nimiq-red-bg-darkened);
 }
 
 .nq-button.red.inverse {
@@ -232,7 +235,7 @@
 .nq-button-s.red:hover,
 .nq-button-s.red:active,
 .nq-button-s.red:focus {
-    color: var(--nimiq-red-hover);
+    color: var(--nimiq-red-darkened);
     background-color: rgba(216, 65, 51, 0.2); /* Based on Nimiq Red */
 }
 
