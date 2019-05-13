@@ -7,7 +7,6 @@
     position: relative;
     height: 7.5rem;
     line-height: 2.5rem;
-    /* background: var(--nimiq-blue); */
     background-image: var(--nimiq-blue-bg);
     color: white;
     font-size: 2rem;
@@ -27,7 +26,6 @@
     display: block;
     text-align: center;
     font-family: inherit;
-    /* overflow: hidden; */
 }
 
 .nq-button:not([disabled]):before {
@@ -296,7 +294,7 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
-/* Focus Ring for Tabs – can be optimized in the future with better :focus-within support */
+/* Focus Ring for Tabs – can be optimized in the future with better :focus-visible support */
 
 .nq-button:after,
 .nq-button-s:before {
