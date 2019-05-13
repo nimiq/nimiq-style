@@ -16,7 +16,7 @@
     letter-spacing: 0.094em;
     border: none;
     padding: 0 4rem;
-    border-radius: 4rem;
+    border-radius: 500px;
     min-width: 25rem;
     margin: 2rem auto;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
@@ -27,7 +27,7 @@
     display: block;
     text-align: center;
     font-family: inherit;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .nq-button:not([disabled]):before {
@@ -37,6 +37,7 @@
     top: 0;
     right: 0;
     bottom: 0;
+    border-radius: 500px;
     background-image: var(--nimiq-blue-bg-darkened);
     opacity: 0;
     transition: opacity 300ms cubic-bezier(0.25, 0, 0, 1);
@@ -44,7 +45,7 @@
 }
 
 .nq-button:hover,
-.nq-button:active {
+.nq-button:focus {
     box-shadow: 0 1rem 2.5rem rgba(0,0,0,0.2);
     transform: translate3D(0,-2px,0);
 }
@@ -55,7 +56,7 @@
     opacity: 1;
 }
 
-.nq-button:focus {
+.nq-button:active {
     outline: none;
     box-shadow: 0 .2rem .3rem rgba(0,0,0,0.2);
     transform: translate3D(0,1px,0);
@@ -109,8 +110,8 @@
 
 .nq-button-s:focus {
     outline: none;
-    /* color: var(--nimiq-light-blue-darkened); */
-    /* background-color: rgba(5, 130, 202, 0.16); Based on Nimiq Light Blue */
+    color: var(--nimiq-light-blue-darkened);
+    background-color: rgba(5, 130, 202, 0.16); /* Based on Nimiq Light Blue */
 }
 
 /* Color variations */
@@ -129,8 +130,10 @@
     color: var(--nimiq-light-blue);
 }
 
-.nq-button.light-blue.inverse:hover {
-    color: #0071C3; 
+.nq-button.light-blue.inverse:hover,
+.nq-button.light-blue.inverse:active,
+.nq-button.light-blue.inverse:focus {
+    color: var(--nimiq-light-blue-darkened); 
 }
 
 .nq-button-s.light-blue {
@@ -164,6 +167,12 @@
     color: var(--nimiq-green);
 }
 
+.nq-button.green.inverse:hover,
+.nq-button.green.inverse:active,
+.nq-button.green.inverse:focus {
+    color: var(--nimiq-green-darkened); 
+}
+
 .nq-button-s.green {
     color: var(--nimiq-green);
     background-color: rgba(33, 188, 165, 0.1); /* Based on Nimiq Green */
@@ -195,6 +204,12 @@
     color: var(--nimiq-orange);
 }
 
+.nq-button.orange.inverse:hover,
+.nq-button.orange.inverse:active,
+.nq-button.orange.inverse:focus {
+    color: var(--nimiq-orange-darkened); 
+}
+
 .nq-button-s.orange {
     color: var(--nimiq-orange);
     background-color: rgba(252, 135, 2, 0.1); /* Based on Nimiq Orange */
@@ -224,6 +239,12 @@
 
 .nq-button.red.inverse {
     color: var(--nimiq-red);
+}
+
+.nq-button.red.inverse:hover,
+.nq-button.red.inverse:active,
+.nq-button.red.inverse:focus {
+    color: var(--nimiq-red-darkened); 
 }
 
 .nq-button-s.red {
@@ -273,4 +294,33 @@
 .nq-button.inverse[disabled]:active {
     background: rgba(255, 255, 255, 0.2);
     color: rgba(255, 255, 255, 0.5);
+}
+
+/* Focus Ring for Tabs – can be optimized in the future with better :focus-within support */
+
+.nq-button:after,
+.nq-button-s:before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid rgba(5, 130, 202, 0.5); /* Based on Nimiq Light Blue */
+    border-radius: 500px;
+    opacity: 0;
+}
+
+.nq-button.inverse:after {
+    border-color: rgba(255,255,255,0.4);
+}
+
+.nq-button:focus,
+.nq-button-s:focus {
+    outline: none;
+}
+
+.nq-button:focus:after,
+.nq-button-s:focus:before {
+    opacity: 1;
 }
