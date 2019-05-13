@@ -106,12 +106,6 @@
     background-color: rgba(31, 35, 72, 0.07); /* Based on Nimiq Blue */
 }
 
-.nq-button-s:focus {
-    outline: none;
-    color: var(--nimiq-light-blue-darkened);
-    background-color: rgba(5, 130, 202, 0.16); /* Based on Nimiq Light Blue */
-}
-
 /* Color variations */
 
 /* light blue */
