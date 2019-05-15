@@ -21,23 +21,23 @@ html {
     --nimiq-red-darkened:        #D13030; /* rgb(216, 65, 51) */
     
     /* Background gradients */
-    --nimiq-blue-bg:       radial-gradient(circle at bottom right, #260133, var(--nimiq-blue));
-    --nimiq-light-blue-bg: radial-gradient(circle at bottom right, #265DD7, var(--nimiq-light-blue));
-    --nimiq-gold-bg:       radial-gradient(circle at bottom right, #EC991C, var(--nimiq-gold));
-    --nimiq-green-bg:      radial-gradient(circle at bottom right, #41A38E, var(--nimiq-green));
-    --nimiq-orange-bg:     radial-gradient(circle at bottom right, #FD6216, var(--nimiq-orange));
-    --nimiq-red-bg:        radial-gradient(circle at bottom right, #CC3047, var(--nimiq-red));
-    --nimiq-purple-bg:     radial-gradient(circle at bottom right, #4D4C96, var(--nimiq-purple));
-    --nimiq-pink-bg:       radial-gradient(circle at bottom right, #E0516B, var(--nimiq-pink));
-    --nimiq-light-green-bg:radial-gradient(circle at bottom right, #70B069, var(--nimiq-light-green));
-    --nimiq-brown-bg:      radial-gradient(circle at bottom right, #724147, var(--nimiq-brown));
+    --nimiq-blue-bg:       radial-gradient(ellipse at bottom right, #260133, var(--nimiq-blue));
+    --nimiq-light-blue-bg: radial-gradient(ellipse at bottom right, #265DD7, var(--nimiq-light-blue));
+    --nimiq-gold-bg:       radial-gradient(ellipse at bottom right, #EC991C, var(--nimiq-gold));
+    --nimiq-green-bg:      radial-gradient(ellipse at bottom right, #41A38E, var(--nimiq-green));
+    --nimiq-orange-bg:     radial-gradient(ellipse at bottom right, #FD6216, var(--nimiq-orange));
+    --nimiq-red-bg:        radial-gradient(ellipse at bottom right, #CC3047, var(--nimiq-red));
+    --nimiq-purple-bg:     radial-gradient(ellipse at bottom right, #4D4C96, var(--nimiq-purple));
+    --nimiq-pink-bg:       radial-gradient(ellipse at bottom right, #E0516B, var(--nimiq-pink));
+    --nimiq-light-green-bg:radial-gradient(ellipse at bottom right, #70B069, var(--nimiq-light-green));
+    --nimiq-brown-bg:      radial-gradient(ellipse at bottom right, #724147, var(--nimiq-brown));
 
     /* Background gradients darkened (hover states) */
-    --nimiq-blue-bg-darkened:       radial-gradient(circle at bottom right, #180021, var(--nimiq-blue-darkened));
-    --nimiq-light-blue-bg-darkened: radial-gradient(circle at bottom right, #2355C4, var(--nimiq-light-blue-darkened));
-    --nimiq-green-bg-darkened:      radial-gradient(circle at bottom right, #3D9988, var(--nimiq-green-darkened));
-    --nimiq-orange-bg-darkened:     radial-gradient(circle at bottom right, #EA5200, var(--nimiq-orange-darkened));
-    --nimiq-red-bg-darkened:        radial-gradient(circle at bottom right, #BF2D46, var(--nimiq-red-darkened));
+    --nimiq-blue-bg-darkened:       radial-gradient(ellipse at bottom right, #180021, var(--nimiq-blue-darkened));
+    --nimiq-light-blue-bg-darkened: radial-gradient(ellipse at bottom right, #2355C4, var(--nimiq-light-blue-darkened));
+    --nimiq-green-bg-darkened:      radial-gradient(ellipse at bottom right, #3D9988, var(--nimiq-green-darkened));
+    --nimiq-orange-bg-darkened:     radial-gradient(ellipse at bottom right, #EA5200, var(--nimiq-orange-darkened));
+    --nimiq-red-bg-darkened:        radial-gradient(ellipse at bottom right, #BF2D46, var(--nimiq-red-darkened));
 
     /* Special colors */
     --nimiq-highlight-bg: rgba(31, 35, 72, 0.06); /* Based on Nimiq Blue */
