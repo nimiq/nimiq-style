@@ -51,7 +51,7 @@ body {
 }
 
 .nq-card-header {
-    padding: 3.75rem 4rem;
+    padding: 4rem;
     text-align: center;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -59,7 +59,7 @@ body {
 
 @media (max-width: 450px) {
     .nq-card-header {
-        padding: 2.75rem 3rem;
+        padding: 3rem;
     }
 }
 
@@ -77,14 +77,14 @@ body {
     padding: 4rem;
 }
 
-.nq-card-header + .nq-card-body {
-    padding-top: 1rem;
-}
-
 @media (max-width: 450px) {
     .nq-card-body {
         padding: 3rem;
     }
+}
+
+.nq-card-header + .nq-card-body {
+    padding-top: 1rem;
 }
 
 .nq-card-body > *:first-child {
