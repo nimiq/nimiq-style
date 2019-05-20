@@ -319,6 +319,44 @@
     background-image: var(--nimiq-red-bg-darkened);
 }
 
+
+/* gold */
+.nq-button.gold {
+    background: var(--nimiq-gold);
+    background-image: var(--nimiq-gold-bg);
+}
+
+.nq-button.gold:before {
+    background: var(--nimiq-gold-bg-darkened);
+}
+
+.nq-button.gold.inverse {
+    color: var(--nimiq-gold);
+}
+
+.nq-button.gold.inverse:hover,
+.nq-button.gold.inverse:active,
+.nq-button.gold.inverse:focus {
+    color: var(--nimiq-gold-darkened); 
+}
+
+.nq-button-s.gold {
+    color: var(--nimiq-gold);
+    background-color: rgba(252, 135, 2, 0.1); /* Based on Nimiq Orange */
+}
+
+.nq-button-s.gold:hover,
+.nq-button-s.gold:active,
+.nq-button-s.gold:focus {
+    color: var(--nimiq-gold-darkened);
+    background-color: rgba(252, 135, 2, 0.2); /* Based on Nimiq Orange */
+}
+
+.nq-button-s.gold[disabled]:hover {
+    color: var(--nimiq-gold);
+    background-color: rgba(252, 135, 2, 0.1); /* Based on Nimiq Orange */
+}
+
 /* Special styles */
 
 .nq-button.inverse {
