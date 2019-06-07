@@ -14,13 +14,12 @@ html {
     --nimiq-light-gray: #FAFAFA;
 
     /* Nimiq main colors darkened (hover states) */
-    --nimiq-blue-darkened:       #151833; /* rgb(5, 130, 202) */
-    --nimiq-light-blue-darkened: #0071C3; /* rgb(5, 130, 202) */
+    --nimiq-blue-darkened:       #151833; /* rgb(21, 24, 51) */
+    --nimiq-light-blue-darkened: #0071C3; /* rgb(0, 113, 195) */
     --nimiq-gold-darkened:       #E5A212; /* rgb(229, 162, 18) */
-    --nimiq-green-darkened:      #20B29E; /* rgb(33, 188, 165) */
-    --nimiq-orange-darkened:     #FC7500; /* rgb(252, 135, 2) */
-    --nimiq-red-darkened:        #D13030; /* rgb(216, 65, 51) */
-    
+    --nimiq-green-darkened:      #20B29E; /* rgb(32, 178, 158) */
+    --nimiq-orange-darkened:     #FC7500; /* rgb(252, 117, 0) */
+    --nimiq-red-darkened:        #D13030; /* rgb(209, 48, 48) */
     /* Background gradients */
     --nimiq-blue-bg:       radial-gradient(ellipse at bottom right, #260133, var(--nimiq-blue));
     --nimiq-light-blue-bg: radial-gradient(ellipse at bottom right, #265DD7, var(--nimiq-light-blue));
