@@ -2,8 +2,9 @@
 
 The Nimiq CSS framework, defining UI look and feel: colors, fonts, sizes.
 
-**Please refer to the [demo page](demo.html)** for examples and in-depth
-explanations of available UI components, what they look like, and how to use them.
+**Please refer to the [demo page](https://nimiq.github.io/nimiq-style/demo.html)**
+for examples and in-depth explanations of available UI components, what they look
+like, and how to use them.
 
 The style framework consists of two parts, the CSS definitions and
 [the fonts](#use-the-official-fonts) (available via Google Fonts).
