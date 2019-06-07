@@ -16,6 +16,7 @@ html {
     /* Nimiq main colors darkened (hover states) */
     --nimiq-blue-darkened:       #151833; /* rgb(5, 130, 202) */
     --nimiq-light-blue-darkened: #0071C3; /* rgb(5, 130, 202) */
+    --nimiq-gold-darkened:       #E5A212; /* rgb(229, 162, 18) */
     --nimiq-green-darkened:      #20B29E; /* rgb(33, 188, 165) */
     --nimiq-orange-darkened:     #FC7500; /* rgb(252, 135, 2) */
     --nimiq-red-darkened:        #D13030; /* rgb(216, 65, 51) */
@@ -35,6 +36,7 @@ html {
     /* Background gradients darkened (hover states) */
     --nimiq-blue-bg-darkened:       radial-gradient(ellipse at bottom right, #180021, var(--nimiq-blue-darkened));
     --nimiq-light-blue-bg-darkened: radial-gradient(ellipse at bottom right, #2355C4, var(--nimiq-light-blue-darkened));
+    --nimiq-gold-bg-darkened:       radial-gradient(ellipse at bottom right, #E58A1B, var(--nimiq-gold-darkened));
     --nimiq-green-bg-darkened:      radial-gradient(ellipse at bottom right, #3D9988, var(--nimiq-green-darkened));
     --nimiq-orange-bg-darkened:     radial-gradient(ellipse at bottom right, #EA5200, var(--nimiq-orange-darkened));
     --nimiq-red-bg-darkened:        radial-gradient(ellipse at bottom right, #BF2D46, var(--nimiq-red-darkened));
