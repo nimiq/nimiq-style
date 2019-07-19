@@ -57,5 +57,5 @@ Nimiq also uses the monospace font "Fira Mono" to display account numbers.
 Include the required subset from Google Fonts:
 
 ```html
-<link href="https://fonts.googleapis.com/css?family=Fira+Mono&text=0123456789ABCDEFGHJKLMNPQRSTUVXY" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fira+Mono&text=0123456789ABCDEFGHJKLMNPQRSTUVXY%20" rel="stylesheet">
 ```
