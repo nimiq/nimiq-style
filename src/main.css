@@ -12,4 +12,8 @@ Styleguide: https://nimiq.com/styleguide
 @import 'dark-adaptions.css';
 @import 'icons.css';
 
+html {
+    --nimiq-ease: cubic-bezier(0.25, 0, 0, 1);
+}
+
 /* @import 'animations/animations.css'; */
