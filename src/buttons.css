@@ -20,7 +20,7 @@
     margin: 2rem auto;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    transition: transform 450ms cubic-bezier(0.25, 0, 0, 1), box-shadow 450ms cubic-bezier(0.25, 0, 0, 1);
+    transition: transform 450ms var(--nimiq-ease), box-shadow 450ms var(--nimiq-ease);
     will-change: box-shadow;
     text-decoration: none;
     display: block;
@@ -38,7 +38,7 @@
     border-radius: 500px;
     background-image: var(--nimiq-blue-bg-darkened);
     opacity: 0;
-    transition: opacity 300ms cubic-bezier(0.25, 0, 0, 1);
+    transition: opacity 300ms var(--nimiq-ease);
     z-index: -1;
 }
 
@@ -73,7 +73,7 @@
     background-color: rgba(31, 35, 72, 0.07); /* Based on Nimiq Blue */
     color: var(--nimiq-blue);
     border-radius: 1.6875rem;
-    transition: color 300ms cubic-bezier(0.25, 0, 0, 1), background-color 300ms cubic-bezier(0.25, 0, 0, 1);
+    transition: color 300ms var(--nimiq-ease), background-color 300ms var(--nimiq-ease);
     will-change: color, background-color;
     border: none;
     cursor: pointer;
@@ -357,7 +357,7 @@
 .nq-button.inverse {
     background: white;
     color: var(--nimiq-blue);
-    transition: transform 450ms cubic-bezier(0.25, 0, 0, 1), box-shadow 450ms cubic-bezier(0.25, 0, 0, 1), color 300ms cubic-bezier(0.25, 0, 0, 1);
+    transition: transform 450ms var(--nimiq-ease), box-shadow 450ms var(--nimiq-ease), color 300ms var(--nimiq-ease);
 }
 
 .nq-button.inverse::before {
