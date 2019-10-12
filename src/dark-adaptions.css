@@ -51,11 +51,11 @@
 /* theme */
 
 .nq-blue-bg {
-    --nimiq-light-blue: #0CA6FE; /* rgb(12, 166, 254) */
+    --nimiq-light-blue: var(--nimiq-light-blue-on-dark);
 }
 
 .nq-blue-bg {
-    --nimiq-red:        #FF5C48; /* rgb(255, 92, 72) */
+    --nimiq-red:        var(--nimiq-red-on-dark);
 }
 
 /* inputs */

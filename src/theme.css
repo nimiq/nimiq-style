@@ -13,6 +13,10 @@ html {
     --nimiq-gray:       #F4F4F4;
     --nimiq-light-gray: #FAFAFA;
 
+    /* Nimiq color palette adaptions on dark background */
+    --nimiq-light-blue-on-dark: #0CA6FE; /* rgb(12, 166, 254) */
+    --nimiq-red-on-dark:        #FF5C48; /* rgb(255, 92, 72) */
+
     /* Nimiq main colors darkened (hover states) */
     --nimiq-blue-darkened:       #151833; /* rgb(21, 24, 51) */
     --nimiq-light-blue-darkened: #0071C3; /* rgb(0, 113, 195) */
