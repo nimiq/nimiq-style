@@ -21,7 +21,7 @@
 .nq-pink-bg .nq-link,
 .nq-light-green-bg .nq-link,
 .nq-brown-bg .nq-link {
-    color: white;
+    color: var(--nimiq-white);
 }
 
 .nq-blue-bg .nq-text,
@@ -71,7 +71,7 @@
 .nq-light-green-bg .nq-input,
 .nq-brown-bg .nq-input {
     border-color: rgba(255, 255, 255, 0.2);
-    color: white;
+    color: var(--nimiq-white);
 }
 
 .nq-blue-bg .nq-input.vanishing,
@@ -122,5 +122,5 @@
 .nq-light-green-bg .nq-input:focus,
 .nq-brown-bg .nq-input:focus{
     border-color: rgba(255, 255, 255, 0.3);
-    color: white;
+    color: var(--nimiq-white);
 }

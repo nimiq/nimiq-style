@@ -362,7 +362,7 @@ a.nq-button {
 /* Special styles */
 
 .nq-button.inverse {
-    background: white;
+    background: var(--nimiq-white);
     color: var(--nimiq-blue);
     transition: transform 450ms var(--nimiq-ease), box-shadow 450ms var(--nimiq-ease), color 300ms var(--nimiq-ease);
 }
@@ -373,7 +373,7 @@ a.nq-button {
 
 .nq-button-s.inverse {
     background: rgba(255, 255, 255, 0.2);
-    color: white;
+    color: var(--nimiq-white);
 }
 
 .nq-button-s.inverse:hover,
