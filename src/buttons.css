@@ -8,7 +8,7 @@
     height: 7.5rem;
     line-height: 2.5rem;
     background-image: var(--nimiq-blue-bg);
-    color: white;
+    color: var(--nimiq-white);
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -29,7 +29,8 @@
 }
 
 a.nq-button {
-    display: flex;
+    display: inline-flex;
+    color: var(--nimiq-white);
     justify-content: center;
     align-items: center;
 }
@@ -115,7 +116,7 @@ a.nq-button {
 }
 
 .nq-button-pill {
-    color: white;
+    color: var(--nimiq-white);
     background: var(--nimiq-blue);
     background-image: var(--nimiq-blue-bg);
 }
