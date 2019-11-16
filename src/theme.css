@@ -12,6 +12,7 @@ html {
     --nimiq-brown:      #795548; /* rgb(121, 85, 72) */
     --nimiq-gray:       #F4F4F4;
     --nimiq-light-gray: #FAFAFA;
+    --nimiq-white:      #FFF;
 
     /* Nimiq color palette adaptions on dark background */
     --nimiq-light-blue-on-dark: #0CA6FE; /* rgb(12, 166, 254) */
