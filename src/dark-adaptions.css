@@ -45,66 +45,25 @@
 /* inputs */
 
 .nq-blue-bg .nq-input,
-.nq-light-blue-bg .nq-input,
-.nq-gold-bg .nq-input,
-.nq-green-bg .nq-input,
-.nq-orange-bg .nq-input,
-.nq-red-bg .nq-input,
-.nq-purple-bg .nq-input,
-.nq-pink-bg .nq-input,
-.nq-light-green-bg .nq-input,
-.nq-brown-bg .nq-input {
-    border-color: rgba(255, 255, 255, 0.2);
+.nq-blue-bg .nq-input-s {
+    --border-color: rgba(255, 255, 255, 0.2);
     color: var(--nimiq-white);
 }
 
 .nq-blue-bg .nq-input.vanishing,
-.nq-light-blue-bg .nq-input.vanishing,
-.nq-gold-bg .nq-input.vanishing,
-.nq-green-bg .nq-input.vanishing,
-.nq-orange-bg .nq-input.vanishing,
-.nq-red-bg .nq-input.vanishing,
-.nq-purple-bg .nq-input.vanishing,
-.nq-pink-bg .nq-input.vanishing,
-.nq-light-green-bg .nq-input.vanishing,
-.nq-brown-bg .nq-input.vanishing {
-    border-color: rgba(255, 255, 255, 0);
+.nq-blue-bg .nq-input-s.vanishing {
+    --border-color: rgba(255, 255, 255, 0);
 }
 
 .nq-blue-bg .nq-input::placeholder,
-.nq-light-blue-bg .nq-input::placeholder,
-.nq-gold-bg .nq-input::placeholder,
-.nq-green-bg .nq-input::placeholder,
-.nq-orange-bg .nq-input::placeholder,
-.nq-red-bg .nq-input::placeholder,
-.nq-purple-bg .nq-input::placeholder,
-.nq-pink-bg .nq-input::placeholder,
-.nq-light-green-bg .nq-input::placeholder,
-.nq-brown-bg .nq-input::placeholder {
+.nq-blue-bg .nq-input-s::placeholder {
     color: rgba(255, 255, 255, 0.3);
 }
 
 .nq-blue-bg .nq-input:hover,
-.nq-light-blue-bg .nq-input:hover,
-.nq-gold-bg .nq-input:hover,
-.nq-green-bg .nq-input:hover,
-.nq-orange-bg .nq-input:hover,
-.nq-red-bg .nq-input:hover,
-.nq-purple-bg .nq-input:hover,
-.nq-pink-bg .nq-input:hover,
-.nq-light-green-bg .nq-input:hover,
-.nq-brown-bg .nq-input:hover,
-
 .nq-blue-bg .nq-input:focus,
-.nq-light-blue-bg .nq-input:focus,
-.nq-gold-bg .nq-input:focus,
-.nq-green-bg .nq-input:focus,
-.nq-orange-bg .nq-input:focus,
-.nq-red-bg .nq-input:focus,
-.nq-purple-bg .nq-input:focus,
-.nq-pink-bg .nq-input:focus,
-.nq-light-green-bg .nq-input:focus,
-.nq-brown-bg .nq-input:focus{
-    border-color: rgba(255, 255, 255, 0.3);
+.nq-blue-bg .nq-input-s:hover,
+.nq-blue-bg .nq-input-s:focus {
+    --border-color: rgba(255, 255, 255, 0.3);
     color: var(--nimiq-white);
 }
