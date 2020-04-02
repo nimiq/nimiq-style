@@ -15,6 +15,10 @@ Styleguide: https://nimiq.com/styleguide
 html {
     /* Transitions */
     --nimiq-ease: cubic-bezier(0.25, 0, 0, 1);
+
+    /* Transition Durations */
+    --attr-duration: .2s;
+    --movement-duration: .4s;
 }
 
 /* @import 'animations/animations.css'; */

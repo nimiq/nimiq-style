@@ -2,7 +2,7 @@ html {
     font-size: 8px;
     --nimiq-size: 8px;
 
-    font-family: 'Muli', system-ui, sans-serif;
+    font-family: Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
