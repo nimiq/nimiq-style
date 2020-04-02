@@ -38,11 +38,11 @@ To use icons, you need to link to the icon sprite:
 You can also link to the Nimiq Style CSS directly in your HTML:
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/@nimiq/style@v0.7.6/nimiq-style.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@nimiq/style@v0.8.0/nimiq-style.min.css" rel="stylesheet">
 ```
 
 **Note:** To use icons, you need to host and serve
-[the `nimiq-style.icons.svg` file](https://cdn.jsdelivr.net/npm/@nimiq/style@v0.7.6/nimiq-style.icons.svg)
+[the `nimiq-style.icons.svg` file](https://cdn.jsdelivr.net/npm/@nimiq/style@v0.8.0/nimiq-style.icons.svg)
 yourself, because cross-origin requests of SVG sprites are not allowed by browsers.
 
 ## Use the official fonts
