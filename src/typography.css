@@ -87,6 +87,7 @@ body {
 .nq-style a {
     color: var(--nimiq-light-blue);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .nq-link:active,
