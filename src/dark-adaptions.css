@@ -34,12 +34,17 @@
 
 /* theme */
 
-.nq-blue-bg {
+.nq-blue-bg,
+.nq-blue-bg .nq-card .nq-blue-bg {
     --nimiq-light-blue: var(--nimiq-light-blue-on-dark);
+    --nimiq-red:        var(--nimiq-red-on-dark);
 }
 
-.nq-blue-bg {
-    --nimiq-red:        var(--nimiq-red-on-dark);
+.nq-blue-bg .nq-button.inverse,
+.nq-blue-bg .nq-card {
+    /* on components with white background reset to original colors */
+    --nimiq-light-blue: #0582CA; /* rgb(5, 130, 202) */
+    --nimiq-red:        #D94432; /* rgb(216, 65, 51) */
 }
 
 /* inputs */
