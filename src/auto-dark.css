@@ -1,0 +1,114 @@
+@media (prefers-color-scheme: dark) {
+    html {
+        --nimiq-light-blue: var(--nimiq-light-blue-on-dark);
+        --nimiq-red:        var(--nimiq-red-on-dark);
+        --nimiq-card-bg:    var(--nimiq-blue);
+    }
+
+    body {
+        color: var(--nimiq-white);
+        background: var(--nimiq-dark-blue);
+    }
+
+    .nq-link {
+        color: var(--nimiq-white);
+    }
+
+    .nq-style p,
+    .nq-text, .nq-label {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+
+    /* Buttons */
+    .nq-button {
+        /* on components with white background reset to original colors */
+        --nimiq-light-blue: #0582CA; /* rgb(5, 130, 202) */
+        --nimiq-red:        #D94432; /* rgb(216, 65, 51) */
+    }
+
+    .nq-button:not(.light-blue):not(.green):not(.orange):not(.red):not(.gold):not([disabled]) {
+        background: var(--nimiq-white);
+        color: var(--nimiq-blue);
+    }
+
+    .nq-button:not(.light-blue):not(.green):not(.orange):not(.red):not(.gold):not([disabled])::before {
+        background-image: var(--nimiq-white);
+    }
+
+    .nq-button::before {
+        background: #EFF0F2; /* Indigo 7% */
+    }
+
+    .nq-button[disabled],
+    .nq-button[disabled]:hover,
+    .nq-button[disabled]:active {
+        background: rgba(255, 255, 255, 0.2);
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .nq-button::after,
+    .nq-button-s::after,
+    .nq-button-pill::after {
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+
+
+    .nq-button-s {
+        background: rgba(255, 255, 255, 0.2);
+        color: var(--nimiq-white);
+    }
+
+    .nq-button-s:hover,
+    .nq-button-s:focus,
+    .nq-button-s:active {
+        background: rgba(255, 255, 255, 0.25);
+        color: var(--nimiq-white);
+    }
+
+    .nq-button-s[disabled]:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+
+    .nq-button-pill:not(.light-blue):not(.green):not(.orange):not(.red):not(.gold):not([disabled]) {
+        background: var(--nimiq-white);
+        color: var(--nimiq-blue);
+    }
+
+    .nq-button-pill:not(.light-blue):not(.green):not(.orange):not(.red):not(.gold):not([disabled])::before {
+        background-image: var(--nimiq-white);
+    }
+
+
+    /* Inputs */
+    .nq-input, .nq-input-s {
+        --border-color: rgba(255, 255, 255, 0.2);
+        color: var(--nimiq-white);
+    }
+
+    .nq-input:hover,
+    .nq-input:focus,
+    .nq-input-s:hover,
+    .nq-input-s:focus,
+    .nq-input.vanishing:focus,
+    .nq-input-s.vanishing:focus {
+        --border-color: rgba(255, 255, 255, 0.3);
+        color: var(--nimiq-white);
+    }
+
+    .nq-input::placeholder,
+    .nq-input-s::placeholder,
+    .nq-input:hover::placeholder,
+    .nq-input:focus::placeholder,
+    .nq-input-s:hover::placeholder,
+    .nq-input-s:focus::placeholder {
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+
+    /* Cards */
+    .nq-card {
+        color: var(--nimiq-white);
+    }
+}
