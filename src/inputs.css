@@ -29,6 +29,7 @@
 .nq-input::placeholder,
 .nq-input-s::placeholder {
     color: rgba(31, 35, 72, 0.5); /* Based on Nimiq Blue */
+    transition: color .2s ease;
 }
 
 .nq-input:hover,
