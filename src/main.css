@@ -11,6 +11,7 @@ Styleguide: https://nimiq.com/styleguide
 @import 'theme.css';
 @import 'dark-adaptions.css';
 @import 'icons.css';
+@import 'auto-dark.css';
 
 html {
     /* Transitions */
